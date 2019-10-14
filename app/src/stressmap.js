@@ -2,11 +2,11 @@ var urlParams = new URLSearchParams(window.location.search);
 
 var town = urlParams.get('town');
 var map;
-if (town == null) {
-	town = "";
-	map = L.map('mapid').setView([52.5173, 13.3889], 10)
-} else if (town == 'neuss') {
-	map = L.map('mapid').setView([51.2019, 6.6857], 14)
+
+if (town == 'neuss') {
+	map = L.map('mapid').setView([51.1762, 6.7066], 12)
+} else if (town == 'darmstadt') {
+	map = L.map('mapid').setView([49.8730, 8.5612], 11)
 } else if (town == 'duesseldorf') {
 	map = L.map('mapid').setView([51.4831, 6.6028], 9)
 } else if (town == 'koeln') {
@@ -14,6 +14,7 @@ if (town == null) {
 } else if (town == 'hamburg') {
 	map = L.map('mapid').setView([53.5586, 10.0785], 10)
 } else {
+        town = 'berlin'
 	map = L.map('mapid').setView([52.5173, 13.3889], 10)
 }
 

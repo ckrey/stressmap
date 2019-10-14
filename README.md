@@ -8,4 +8,5 @@ Current Examples:
 * Düsseldorf https://ckrey.github.io/stressmap/app/index.html?town=duesseldorf
 * Köln / Aachen https://ckrey.github.io/stressmap/app/index.html?town=koeln
 * Hamburg https://ckrey.github.io/stressmap/app/index.html?town=hamburg
+* Darmstadt https://ckrey.github.io/stressmap/app/index.html?town=darmstadt
 * _others? – create a Issue/PR_
