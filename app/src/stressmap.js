@@ -4,9 +4,13 @@ var town = urlParams.get('town');
 var map;
 
 if (town == 'neuss') {
+	map = L.map('mapid').setView([51.20, 6.69], 14)
+} else if (town == 'neuss-small-overpass') {
+	map = L.map('mapid').setView([51.2, 6.69], 13)
+} else if (town == 'neuss-overpass') {
 	map = L.map('mapid').setView([51.1762, 6.7066], 12)
 } else if (town == 'darmstadt') {
-	map = L.map('mapid').setView([49.8730, 8.5612], 11)
+	map = L.map('mapid').setView([49.8730, 8.60], 11)
 } else if (town == 'duesseldorf') {
 	map = L.map('mapid').setView([51.4831, 6.6028], 9)
 } else if (town == 'koeln') {
@@ -18,10 +22,18 @@ if (town == 'neuss') {
 	map = L.map('mapid').setView([52.5173, 13.3889], 10)
 }
 
-const settings = [{ color: '#0099cc', weight: 3, key: 'LTS1', zIndex: 1, title: 'LTS 1 - Suitable for Children', url: 'data/' + town + '/level_1.json' },
-                { color: '#1C7C54', weight: 3, key: 'LTS2', zIndex: 2, title: 'LTS 2 - Low Stress', url: 'data/' + town + '/level_2.json' },
-                { color: '#F0C808', weight: 3, key: 'LTS3', zIndex: 3, title: 'LTS 3 - Moderate Stress', url: 'data/' + town + '/level_3.json' },
-                { color: '#DD5454', weight: 3, key: 'LTS4', zIndex: 4, title: 'LTS 4 - High Stress', url: 'data/' + town + '/level_4.json' }]
+const settings = [
+
+{ color: '#FF7777', weight: 4, key: 'LTS0', zIndex: 1, title: 'LTS 0 - Biking not permitted', url: 'data/' + town + '/level_0.json' },
+{ color: '#0099cc', weight: 4, key: 'LTS1', zIndex: 2, title: 'LTS 1 - Suitable for Children', url: 'data/' + town + '/level_1.json' },
+{ color: '#1C7C54', weight: 4, key: 'LTS2', zIndex: 3, title: 'LTS 2 - Low Stress', url: 'data/' + town + '/level_2.json' },
+{ color: '#F0C808', weight: 4, key: 'LTS3', zIndex: 4, title: 'LTS 3 - Moderate Stress', url: 'data/' + town + '/level_3.json' },
+{ color: '#DD5454', weight: 4, key: 'LTS4', zIndex: 5, title: 'LTS 4 - High Stress', url: 'data/' + town + '/level_4.json' },
+
+{ color: '#FF0000', weight: 2, key: '0', zIndex: 6, title: '0xx - No Biking Permitted', url: 'data/' + town + '/quality_0.json' },
+{ color: '#00FF00', weight: 2, key: '1', zIndex: 7, title: '1xx - Biking Possible', url: 'data/' + town + '/quality_1.json' },
+{ color: '#0000FF', weight: 2, key: '5', zIndex: 8, title: '5xx - Biking Separated', url: 'data/' + town + '/quality_5.json' }
+]
 const homePage = 'https://bikeottawa.ca/index.php/advocacy/advocacy-news/213-data_group'
 const legendTitle = 'Cycling Stress Map'
 const layers = {}
@@ -153,50 +165,6 @@ function addIconLayers(){
       layer: L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
           maxZoom: 22,
           attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      })
-  });
-
-  providers.push({
-      title: 'streets',
-      icon: 'img/icons-streets.png',
-      layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-          attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-          maxZoom: 22,
-          id: 'mapbox.streets',
-          accessToken: 'pk.eyJ1IjoienpwdGljaGthIiwiYSI6ImNqN2FubTQ5ejBpZDAyd285MmZsdHN3d3IifQ.dc6SvmJLcl7KGPQlBYFj-g'
-      })
-  });
-
-  providers.push({
-      title: 'satellite',
-      icon: 'img/icons-satellite.png',
-      layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-          attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-          maxZoom: 22,
-          id: 'mapbox.satellite',
-          accessToken: 'pk.eyJ1IjoienpwdGljaGthIiwiYSI6ImNqN2FubTQ5ejBpZDAyd285MmZsdHN3d3IifQ.dc6SvmJLcl7KGPQlBYFj-g'
-      })
-  });
-
-  providers.push({
-      title: 'light',
-      icon: 'img/icons-light.png',
-      layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-          attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-          maxZoom: 22,
-          id: 'mapbox.light',
-          accessToken: 'pk.eyJ1IjoienpwdGljaGthIiwiYSI6ImNqN2FubTQ5ejBpZDAyd285MmZsdHN3d3IifQ.dc6SvmJLcl7KGPQlBYFj-g'
-      })
-  });
-
-  providers.push({
-      title: 'run-bike-hike',
-      icon: 'img/icons-run-bike-hike.png',
-      layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-          attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-          maxZoom: 22,
-          id: 'mapbox.run-bike-hike',
-          accessToken: 'pk.eyJ1IjoienpwdGljaGthIiwiYSI6ImNqN2FubTQ5ejBpZDAyd285MmZsdHN3d3IifQ.dc6SvmJLcl7KGPQlBYFj-g'
       })
   });
 

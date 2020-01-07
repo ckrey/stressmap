@@ -1,6 +1,8 @@
 # Cycling Level of Stress Map
 
-Displays a map showing levels of traffic stress for cycling.  The data included with this project is currently only a very small subset for example purposes.
+Displays a map showing levels of traffic stress for cycling.
+
+The data included with this project is currently only a very small subset for example purposes.
 
 Current Examples:
 * Berlin https://ckrey.github.io/stressmap/app/index.html (Default)
