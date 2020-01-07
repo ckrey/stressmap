@@ -43,24 +43,24 @@ def effective_highway(tags, value):
 
 def separated_path(old_level, tags):
     if effective_highway(tags, 'path'):
-        # This way is a separated path because highway='path'.
+        # 501 This way is a separated path because highway='path'.
         return 501
 
     if effective_highway(tags, 'footway'):
         if 'footway' not in tags or tags['footway'] != 'crossing':
-            # This way is a separated path because highway='footway' but it is not a crossing.
+            # 502 This way is a separated path because highway='footway' but it is not a crossing.
             return 502
 
     if effective_highway(tags, 'cycleway'):
-        # This way is a separated path because highway='cycleway'.
+        # 503 This way is a separated path because highway='cycleway'.
         return 503
 
     if tag_starts_with_value(tags, 'cycleway', 'track'):
-        # This way is a separated path because cycleway* is defined as \'track\'.
+        # 504 This way is a separated path because cycleway* is defined as \'track\'.
         return 504
 
     if tag_starts_with_value(tags, 'cycleway', 'opposite_track'):
-        # This way is a separated path because cycleway* is defined as \'opposite_track\'.
+        # 505 This way is a separated path because cycleway* is defined as \'opposite_track\'.
         return 505
 
     return old_level # not separated
@@ -71,43 +71,55 @@ def biking_permitted(tags):
 
     if 'highway' in tags or 'bicycle' in tags:
         if 'bicycle' in tags and tags['bicycle'] == 'no':
-            return 1 # Cycling not permitted due to bicycle='no' tag.
+            # 1 Cycling not permitted due to bicycle='no' tag.
+            return 1
         if 'bicycle' in tags and tags['bicycle'] == 'use_sidepath':
-            return 10 # Cycling not permitted due to bicycle='use_sidepath' tag.
+            # 10 Cycling not permitted due to bicycle='use_sidepath' tag.
+            return 10
         if 'access' in tags and tags['access'] == 'no':
-            return 2 # Cycling not permitted due to access='no' tag.
+            # 2 Cycling not permitted due to access='no' tag.
+            return 2
 
         if effective_highway(tags, 'motorway'):
-            return 3 # Cycling not permitted due to highway=\'motorway\' tag.
+            # 3 Cycling not permitted due to highway=\'motorway\' tag.
+            return 3
         if effective_highway(tags, 'motorway_link'):
-            return 4 # Cycling not permitted due to highway='motorway_link' tag.
+            # 4 Cycling not permitted due to highway='motorway_link' tag.
+            return 4
         if effective_highway(tags, 'proposed'):
-            return 5 # Cycling not permitted due to highway='proposed' tag.
+            # 5 Cycling not permitted due to highway='proposed' tag.
+            return 5
         if effective_highway(tags, 'construction'):
-            return 8 # Cycling not permitted due to highway='construction' tag.
+            # 8 Cycling not permitted due to highway='construction' tag.
+            return 8
 
         if 'footway' in tags and tags['footway'] == 'sidewalk':
             if 'bicycle' in tags and tags['bicycle'] == 'yes':
                 return 100
             if effective_highway(tags, 'footway'):
-                # Cycling not permitted. When footway='sidewalk' is present,
-                # there must be a bicycle='yes' when the highway is 'footway'.
+                # 6 Cycling not permitted. When footway='sidewalk' is present,
+                # 6 there must be a bicycle='yes' when the highway is 'footway'.
                 return 6
             if effective_highway(tags, 'path'):
-                # Cycling not permitted. When footway='sidewalk' is present,
-                # there must be a bicycle='yes' when the highway is 'path'.
+                # 7 Cycling not permitted. When footway='sidewalk' is present,
+                # 7 there must be a bicycle='yes' when the highway is 'path'.
                 return 7
             return 100
 
         if effective_highway(tags, 'footway') or effective_highway(tags, 'steps'):
             if tag_starts_with(tags, 'cycleway'):
-                return 100 # footway with cycleway
+                # 101 footway with cycleway
+                return 101
             if 'bicycle' in tags and tags['bicycle'] == 'yes':
-                return 100 # footway with explicit bicycle
-            return 9 # footway without explicit cycleway or bicycle
+                # 102 jfootway with explicit bicycle
+                return 102
+            # 9 footway without explicit cycleway or bicycle
+            return 9
 
-        return 100 # highway or bicycle in tags
-    return 0 # Way has neither a highway tag nor a bicycle=yes tag. The way is not a highway.
+        # 100 highway or bicycle in tags
+        return 100
+    # 0 Way has neither a highway tag nor a bicycle=yes tag. The way is not a highway.
+    return 0
 
 def compute_level(tags):
     _level = biking_permitted(tags)
@@ -256,6 +268,7 @@ if __name__ == "__main__":
                     s=waysSeparator, w=way_id))
                 waysSeparator = ','
                 outfile.write(',"properties":{{"id":"way/{w:s}"\n'.format(w=way_id))
+                outfile.write(',"quality":{q:d}\n'.format(q=level))
                 if 'name' in wayTags:
                     way_name = wayTags['name']
                     way_name = way_name.replace('"', '\\"')

@@ -1,6 +1,7 @@
 {"type":"FeatureCollection","features":[
 {"type":"Feature","id":"way/4990495"
 ,"properties":{"id":"way/4990495"
+,"quality":502
 ,"name":"Wierstraetweg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.687005,51.200412]
@@ -16,6 +17,7 @@
 ]}}
 ,{"type":"Feature","id":"way/4990497"
 ,"properties":{"id":"way/4990497"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.699222,51.193683]
 ,[6.699088,51.193695]
@@ -32,6 +34,7 @@
 ]}}
 ,{"type":"Feature","id":"way/7702248"
 ,"properties":{"id":"way/7702248"
+,"quality":501
 ,"name":"Scheibendamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.707686,51.189808]
@@ -47,6 +50,7 @@
 ]}}
 ,{"type":"Feature","id":"way/7705586"
 ,"properties":{"id":"way/7705586"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.707686,51.189808]
 ,[6.707681,51.189589]
@@ -57,6 +61,7 @@
 ]}}
 ,{"type":"Feature","id":"way/7705589"
 ,"properties":{"id":"way/7705589"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.706465,51.189361]
 ,[6.706594,51.189480]
@@ -77,6 +82,7 @@
 ]}}
 ,{"type":"Feature","id":"way/8548069"
 ,"properties":{"id":"way/8548069"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.683695,51.203165]
@@ -85,6 +91,7 @@
 ]}}
 ,{"type":"Feature","id":"way/13538783"
 ,"properties":{"id":"way/13538783"
+,"quality":504
 ,"name":"Gielenstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.680671,51.199884]
@@ -92,6 +99,7 @@
 ]}}
 ,{"type":"Feature","id":"way/13709193"
 ,"properties":{"id":"way/13709193"
+,"quality":504
 ,"name":"Gielenstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.680017,51.198655]
@@ -103,6 +111,7 @@
 ]}}
 ,{"type":"Feature","id":"way/13709586"
 ,"properties":{"id":"way/13709586"
+,"quality":504
 ,"name":"Theodor-Heuss-Platz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.686647,51.204816]
@@ -113,6 +122,7 @@
 ]}}
 ,{"type":"Feature","id":"way/13709702"
 ,"properties":{"id":"way/13709702"
+,"quality":504
 ,"name":"Theodor-Heuss-Platz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.683904,51.203040]
@@ -126,6 +136,7 @@
 ]}}
 ,{"type":"Feature","id":"way/15808522"
 ,"properties":{"id":"way/15808522"
+,"quality":504
 ,"name":"Stephanstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.680671,51.199884]
@@ -133,6 +144,7 @@
 ]}}
 ,{"type":"Feature","id":"way/15984304"
 ,"properties":{"id":"way/15984304"
+,"quality":501
 ,"name":"Zufuhrstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.675998,51.202018]
@@ -145,6 +157,7 @@
 ]}}
 ,{"type":"Feature","id":"way/16814937"
 ,"properties":{"id":"way/16814937"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.693204,51.195489]
 ,[6.693429,51.195408]
@@ -152,6 +165,7 @@
 ]}}
 ,{"type":"Feature","id":"way/18508608"
 ,"properties":{"id":"way/18508608"
+,"quality":504
 ,"name":"Deutsche Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.682967,51.194972]
@@ -159,6 +173,7 @@
 ]}}
 ,{"type":"Feature","id":"way/18512873"
 ,"properties":{"id":"way/18512873"
+,"quality":501
 ,"name":"Florastraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.690357,51.194674]
@@ -168,6 +183,7 @@
 ]}}
 ,{"type":"Feature","id":"way/18516316"
 ,"properties":{"id":"way/18516316"
+,"quality":504
 ,"name":"Platz am Niedertor"
 },"geometry":{"type":"LineString","coordinates":[
 [6.686419,51.200617]
@@ -177,6 +193,7 @@
 ]}}
 ,{"type":"Feature","id":"way/18524787"
 ,"properties":{"id":"way/18524787"
+,"quality":501
 ,"name":"Glockhammer"
 },"geometry":{"type":"LineString","coordinates":[
 [6.694450,51.199610]
@@ -191,12 +208,14 @@
 ]}}
 ,{"type":"Feature","id":"way/18531325"
 ,"properties":{"id":"way/18531325"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.683453,51.196791]
 ,[6.683194,51.196642]
 ]}}
 ,{"type":"Feature","id":"way/18534716"
 ,"properties":{"id":"way/18534716"
+,"quality":504
 ,"name":"Nordkanalallee"
 },"geometry":{"type":"LineString","coordinates":[
 [6.703695,51.190088]
@@ -210,6 +229,7 @@
 ]}}
 ,{"type":"Feature","id":"way/18680815"
 ,"properties":{"id":"way/18680815"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.687893,51.193828]
 ,[6.687887,51.193788]
@@ -217,6 +237,7 @@
 ]}}
 ,{"type":"Feature","id":"way/18883361"
 ,"properties":{"id":"way/18883361"
+,"quality":505
 ,"name":"Hesemannstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.682870,51.196972]
@@ -224,6 +245,7 @@
 ]}}
 ,{"type":"Feature","id":"way/19662911"
 ,"properties":{"id":"way/19662911"
+,"quality":504
 ,"name":"Am Kehlturm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.695884,51.198078]
@@ -242,6 +264,7 @@
 ]}}
 ,{"type":"Feature","id":"way/20899591"
 ,"properties":{"id":"way/20899591"
+,"quality":501
 ,"name":"Franz-Kellermann-Weg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.685011,51.194051]
@@ -270,12 +293,14 @@
 ]}}
 ,{"type":"Feature","id":"way/20900117"
 ,"properties":{"id":"way/20900117"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.683271,51.192773]
 ,[6.683360,51.192828]
 ]}}
 ,{"type":"Feature","id":"way/20901813"
 ,"properties":{"id":"way/20901813"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.682166,51.193542]
 ,[6.682262,51.193465]
@@ -283,6 +308,7 @@
 ]}}
 ,{"type":"Feature","id":"way/22950814"
 ,"properties":{"id":"way/22950814"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.678120,51.186780]
 ,[6.678106,51.186816]
@@ -307,6 +333,7 @@
 ]}}
 ,{"type":"Feature","id":"way/23245627"
 ,"properties":{"id":"way/23245627"
+,"quality":504
 ,"name":"Gielenstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.680017,51.198655]
@@ -314,6 +341,7 @@
 ]}}
 ,{"type":"Feature","id":"way/23245938"
 ,"properties":{"id":"way/23245938"
+,"quality":504
 ,"name":"Hammfelddamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.707188,51.190781]
@@ -321,6 +349,7 @@
 ]}}
 ,{"type":"Feature","id":"way/23245939"
 ,"properties":{"id":"way/23245939"
+,"quality":504
 ,"name":"Hammfelddamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.706987,51.190492]
@@ -329,6 +358,7 @@
 ]}}
 ,{"type":"Feature","id":"way/23245940"
 ,"properties":{"id":"way/23245940"
+,"quality":504
 ,"name":"Hammfelddamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.707101,51.190390]
@@ -336,6 +366,7 @@
 ]}}
 ,{"type":"Feature","id":"way/23245941"
 ,"properties":{"id":"way/23245941"
+,"quality":504
 ,"name":"Hammfelddamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.707331,51.190691]
@@ -344,6 +375,7 @@
 ]}}
 ,{"type":"Feature","id":"way/23260192"
 ,"properties":{"id":"way/23260192"
+,"quality":504
 ,"name":"Selikumer Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.700878,51.192887]
@@ -353,6 +385,7 @@
 ]}}
 ,{"type":"Feature","id":"way/23282140"
 ,"properties":{"id":"way/23282140"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691879,51.192834]
 ,[6.691491,51.192922]
@@ -360,6 +393,7 @@
 ]}}
 ,{"type":"Feature","id":"way/23282143"
 ,"properties":{"id":"way/23282143"
+,"quality":504
 ,"name":"Alexianerplatz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.704710,51.190293]
@@ -368,6 +402,7 @@
 ]}}
 ,{"type":"Feature","id":"way/23315757"
 ,"properties":{"id":"way/23315757"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680313,51.190578]
 ,[6.680173,51.190557]
@@ -375,6 +410,7 @@
 ]}}
 ,{"type":"Feature","id":"way/23377813"
 ,"properties":{"id":"way/23377813"
+,"quality":504
 ,"name":"Hermannsplatz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.681217,51.199745]
@@ -383,12 +419,14 @@
 ]}}
 ,{"type":"Feature","id":"way/23377967"
 ,"properties":{"id":"way/23377967"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692531,51.192708]
 ,[6.691948,51.192820]
 ]}}
 ,{"type":"Feature","id":"way/23892866"
 ,"properties":{"id":"way/23892866"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.687899,51.192978]
 ,[6.688136,51.192937]
@@ -397,6 +435,7 @@
 ]}}
 ,{"type":"Feature","id":"way/23892884"
 ,"properties":{"id":"way/23892884"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686931,51.193045]
 ,[6.686963,51.193095]
@@ -410,6 +449,7 @@
 ]}}
 ,{"type":"Feature","id":"way/23892913"
 ,"properties":{"id":"way/23892913"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686441,51.192905]
 ,[6.686433,51.193078]
@@ -422,18 +462,21 @@
 ]}}
 ,{"type":"Feature","id":"way/23895627"
 ,"properties":{"id":"way/23895627"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698730,51.194346]
 ,[6.698561,51.194450]
 ]}}
 ,{"type":"Feature","id":"way/23895650"
 ,"properties":{"id":"way/23895650"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698561,51.194450]
 ,[6.698181,51.194672]
 ]}}
 ,{"type":"Feature","id":"way/25840910"
 ,"properties":{"id":"way/25840910"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.698381,51.191544]
 ,[6.698402,51.191585]
@@ -441,6 +484,7 @@
 ]}}
 ,{"type":"Feature","id":"way/25964906"
 ,"properties":{"id":"way/25964906"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.695358,51.192180]
 ,[6.695587,51.192252]
@@ -455,12 +499,14 @@
 ]}}
 ,{"type":"Feature","id":"way/25983314"
 ,"properties":{"id":"way/25983314"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.695516,51.192147]
 ,[6.695587,51.192252]
 ]}}
 ,{"type":"Feature","id":"way/26434916"
 ,"properties":{"id":"way/26434916"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.699796,51.192980]
 ,[6.699804,51.192975]
@@ -472,24 +518,28 @@
 ]}}
 ,{"type":"Feature","id":"way/26660595"
 ,"properties":{"id":"way/26660595"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.698491,51.190290]
 ,[6.699406,51.190088]
 ]}}
 ,{"type":"Feature","id":"way/26660596"
 ,"properties":{"id":"way/26660596"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.699406,51.190088]
 ,[6.699615,51.190032]
 ]}}
 ,{"type":"Feature","id":"way/26660597"
 ,"properties":{"id":"way/26660597"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.699615,51.190032]
 ,[6.699713,51.190010]
 ]}}
 ,{"type":"Feature","id":"way/27521187"
 ,"properties":{"id":"way/27521187"
+,"quality":504
 ,"name":"Gielenstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.683207,51.202697]
@@ -497,6 +547,7 @@
 ]}}
 ,{"type":"Feature","id":"way/27521508"
 ,"properties":{"id":"way/27521508"
+,"quality":501
 ,"name":"Wierstraetweg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.688427,51.198184]
@@ -505,6 +556,7 @@
 ]}}
 ,{"type":"Feature","id":"way/27521509"
 ,"properties":{"id":"way/27521509"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698211,51.193571]
 ,[6.697861,51.193807]
@@ -532,12 +584,14 @@
 ]}}
 ,{"type":"Feature","id":"way/27521510"
 ,"properties":{"id":"way/27521510"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.696508,51.191602]
 ,[6.696537,51.191662]
 ]}}
 ,{"type":"Feature","id":"way/28176292"
 ,"properties":{"id":"way/28176292"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.688651,51.199559]
 ,[6.688574,51.199512]
@@ -547,6 +601,7 @@
 ]}}
 ,{"type":"Feature","id":"way/28177348"
 ,"properties":{"id":"way/28177348"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.700420,51.194059]
 ,[6.700523,51.193971]
@@ -554,6 +609,7 @@
 ]}}
 ,{"type":"Feature","id":"way/28177351"
 ,"properties":{"id":"way/28177351"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.699861,51.193830]
 ,[6.699825,51.193802]
@@ -563,6 +619,7 @@
 ]}}
 ,{"type":"Feature","id":"way/28182936"
 ,"properties":{"id":"way/28182936"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.697676,51.194099]
 ,[6.697664,51.194072]
@@ -570,12 +627,14 @@
 ]}}
 ,{"type":"Feature","id":"way/28238622"
 ,"properties":{"id":"way/28238622"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698453,51.193664]
 ,[6.698576,51.193544]
 ]}}
 ,{"type":"Feature","id":"way/28238623"
 ,"properties":{"id":"way/28238623"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698576,51.193544]
 ,[6.698594,51.193528]
@@ -584,12 +643,14 @@
 ]}}
 ,{"type":"Feature","id":"way/28238624"
 ,"properties":{"id":"way/28238624"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.693506,51.195381]
 ,[6.693863,51.195253]
 ]}}
 ,{"type":"Feature","id":"way/28238690"
 ,"properties":{"id":"way/28238690"
+,"quality":504
 ,"name":"Nordkanalallee"
 },"geometry":{"type":"LineString","coordinates":[
 [6.699276,51.191030]
@@ -597,6 +658,7 @@
 ]}}
 ,{"type":"Feature","id":"way/28238691"
 ,"properties":{"id":"way/28238691"
+,"quality":504
 ,"name":"Nordkanalallee"
 },"geometry":{"type":"LineString","coordinates":[
 [6.699599,51.190957]
@@ -604,6 +666,7 @@
 ]}}
 ,{"type":"Feature","id":"way/28338810"
 ,"properties":{"id":"way/28338810"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678564,51.206024]
@@ -612,6 +675,7 @@
 ]}}
 ,{"type":"Feature","id":"way/28586141"
 ,"properties":{"id":"way/28586141"
+,"quality":501
 ,"name":"Klostergasse"
 },"geometry":{"type":"LineString","coordinates":[
 [6.691603,51.197183]
@@ -622,6 +686,7 @@
 ]}}
 ,{"type":"Feature","id":"way/28943786"
 ,"properties":{"id":"way/28943786"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.707699,51.191951]
 ,[6.707739,51.191897]
@@ -640,6 +705,7 @@
 ]}}
 ,{"type":"Feature","id":"way/28947595"
 ,"properties":{"id":"way/28947595"
+,"quality":504
 ,"name":"Nordkanalallee"
 },"geometry":{"type":"LineString","coordinates":[
 [6.704624,51.190354]
@@ -655,6 +721,7 @@
 ]}}
 ,{"type":"Feature","id":"way/28947597"
 ,"properties":{"id":"way/28947597"
+,"quality":504
 ,"name":"Hammfelddamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.706316,51.189365]
@@ -663,6 +730,7 @@
 ]}}
 ,{"type":"Feature","id":"way/28947598"
 ,"properties":{"id":"way/28947598"
+,"quality":504
 ,"name":"Alexianerplatz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.706216,51.189437]
@@ -674,12 +742,14 @@
 ]}}
 ,{"type":"Feature","id":"way/30698276"
 ,"properties":{"id":"way/30698276"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.693746,51.195151]
 ,[6.693674,51.195087]
 ]}}
 ,{"type":"Feature","id":"way/32476863"
 ,"properties":{"id":"way/32476863"
+,"quality":504
 ,"name":"Gielenstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.680014,51.198647]
@@ -688,12 +758,14 @@
 ]}}
 ,{"type":"Feature","id":"way/33104394"
 ,"properties":{"id":"way/33104394"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.696356,51.194333]
 ,[6.696300,51.194268]
 ]}}
 ,{"type":"Feature","id":"way/33104756"
 ,"properties":{"id":"way/33104756"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.689521,51.197032]
 ,[6.689967,51.196808]
@@ -703,6 +775,7 @@
 ]}}
 ,{"type":"Feature","id":"way/33104947"
 ,"properties":{"id":"way/33104947"
+,"quality":504
 ,"name":"Jülicher Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.688254,51.190181]
@@ -711,18 +784,21 @@
 ]}}
 ,{"type":"Feature","id":"way/34178427"
 ,"properties":{"id":"way/34178427"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.697736,51.193102]
 ,[6.697722,51.193108]
 ]}}
 ,{"type":"Feature","id":"way/34178429"
 ,"properties":{"id":"way/34178429"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.697853,51.193055]
 ,[6.697736,51.193102]
 ]}}
 ,{"type":"Feature","id":"way/34334047"
 ,"properties":{"id":"way/34334047"
+,"quality":504
 ,"name":"Gielenstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.680511,51.199572]
@@ -731,6 +807,7 @@
 ]}}
 ,{"type":"Feature","id":"way/34382648"
 ,"properties":{"id":"way/34382648"
+,"quality":504
 ,"name":"Stephanstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.679983,51.199996]
@@ -743,6 +820,7 @@
 ]}}
 ,{"type":"Feature","id":"way/34382649"
 ,"properties":{"id":"way/34382649"
+,"quality":504
 ,"name":"Stephanstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.680511,51.199910]
@@ -751,6 +829,7 @@
 ]}}
 ,{"type":"Feature","id":"way/36946354"
 ,"properties":{"id":"way/36946354"
+,"quality":504
 ,"name":"Deutsche Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.682801,51.194727]
@@ -758,6 +837,7 @@
 ]}}
 ,{"type":"Feature","id":"way/36946355"
 ,"properties":{"id":"way/36946355"
+,"quality":504
 ,"name":"Deutsche Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.682752,51.194636]
@@ -766,12 +846,14 @@
 ]}}
 ,{"type":"Feature","id":"way/36946357"
 ,"properties":{"id":"way/36946357"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.698358,51.191501]
 ,[6.698381,51.191544]
 ]}}
 ,{"type":"Feature","id":"way/37118584"
 ,"properties":{"id":"way/37118584"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.693022,51.192680]
 ,[6.692485,51.192882]
@@ -779,6 +861,7 @@
 ]}}
 ,{"type":"Feature","id":"way/37118585"
 ,"properties":{"id":"way/37118585"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691208,51.193023]
 ,[6.691288,51.193047]
@@ -788,6 +871,7 @@
 ]}}
 ,{"type":"Feature","id":"way/38113876"
 ,"properties":{"id":"way/38113876"
+,"quality":504
 ,"name":"Hermannsplatz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.681797,51.199435]
@@ -797,6 +881,7 @@
 ]}}
 ,{"type":"Feature","id":"way/38208362"
 ,"properties":{"id":"way/38208362"
+,"quality":505
 ,"name":"Hermannsplatz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.682541,51.199606]
@@ -809,6 +894,7 @@
 ]}}
 ,{"type":"Feature","id":"way/38304972"
 ,"properties":{"id":"way/38304972"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695818,51.198125]
 ,[6.695933,51.198193]
@@ -819,6 +905,7 @@
 ]}}
 ,{"type":"Feature","id":"way/41999881"
 ,"properties":{"id":"way/41999881"
+,"quality":504
 ,"name":"Gielenstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.683321,51.202757]
@@ -827,6 +914,7 @@
 ]}}
 ,{"type":"Feature","id":"way/42382055"
 ,"properties":{"id":"way/42382055"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.710200,51.198535]
 ,[6.710059,51.198469]
@@ -848,6 +936,7 @@
 ]}}
 ,{"type":"Feature","id":"way/42743024"
 ,"properties":{"id":"way/42743024"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.682825,51.194768]
 ,[6.682746,51.194784]
@@ -855,6 +944,7 @@
 ]}}
 ,{"type":"Feature","id":"way/43112473"
 ,"properties":{"id":"way/43112473"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.674045,51.201856]
 ,[6.674070,51.201796]
@@ -884,6 +974,7 @@
 ]}}
 ,{"type":"Feature","id":"way/43362933"
 ,"properties":{"id":"way/43362933"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.697127,51.196485]
 ,[6.697094,51.196522]
@@ -891,6 +982,7 @@
 ]}}
 ,{"type":"Feature","id":"way/43449756"
 ,"properties":{"id":"way/43449756"
+,"quality":504
 ,"name":"Am Kehlturm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.696182,51.197469]
@@ -902,6 +994,7 @@
 ]}}
 ,{"type":"Feature","id":"way/44803862"
 ,"properties":{"id":"way/44803862"
+,"quality":504
 ,"name":"Hammfelddamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.708348,51.192028]
@@ -911,6 +1004,7 @@
 ]}}
 ,{"type":"Feature","id":"way/47048929"
 ,"properties":{"id":"way/47048929"
+,"quality":505
 ,"name":"Büttger Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.683269,51.199394]
@@ -920,6 +1014,7 @@
 ]}}
 ,{"type":"Feature","id":"way/48396912"
 ,"properties":{"id":"way/48396912"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698242,51.191237]
 ,[6.698271,51.191304]
@@ -927,6 +1022,7 @@
 ]}}
 ,{"type":"Feature","id":"way/48543035"
 ,"properties":{"id":"way/48543035"
+,"quality":502
 ,"name":"Hermannsplatz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.681568,51.199654]
@@ -935,6 +1031,7 @@
 ]}}
 ,{"type":"Feature","id":"way/48543037"
 ,"properties":{"id":"way/48543037"
+,"quality":502
 ,"name":"Hermannsplatz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.681802,51.199846]
@@ -943,6 +1040,7 @@
 ]}}
 ,{"type":"Feature","id":"way/48543039"
 ,"properties":{"id":"way/48543039"
+,"quality":502
 ,"name":"Hermannsplatz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.682003,51.199760]
@@ -951,12 +1049,14 @@
 ]}}
 ,{"type":"Feature","id":"way/48543043"
 ,"properties":{"id":"way/48543043"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.681432,51.199742]
 ,[6.681474,51.199696]
 ]}}
 ,{"type":"Feature","id":"way/48543045"
 ,"properties":{"id":"way/48543045"
+,"quality":502
 ,"name":"Hermannsplatz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.681802,51.199846]
@@ -964,6 +1064,7 @@
 ]}}
 ,{"type":"Feature","id":"way/50314869"
 ,"properties":{"id":"way/50314869"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680484,51.195339]
 ,[6.680401,51.195316]
@@ -983,6 +1084,7 @@
 ]}}
 ,{"type":"Feature","id":"way/50314872"
 ,"properties":{"id":"way/50314872"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680018,51.195776]
 ,[6.680016,51.195748]
@@ -994,6 +1096,7 @@
 ]}}
 ,{"type":"Feature","id":"way/50345462"
 ,"properties":{"id":"way/50345462"
+,"quality":504
 ,"name":"Hammfelddamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.708012,51.191687]
@@ -1002,6 +1105,7 @@
 ]}}
 ,{"type":"Feature","id":"way/50566279"
 ,"properties":{"id":"way/50566279"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.680627,51.199466]
 ,[6.680650,51.199463]
@@ -1009,6 +1113,7 @@
 ]}}
 ,{"type":"Feature","id":"way/51848985"
 ,"properties":{"id":"way/51848985"
+,"quality":504
 ,"name":"Rheydter Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.676671,51.199130]
@@ -1018,6 +1123,7 @@
 ]}}
 ,{"type":"Feature","id":"way/51848986"
 ,"properties":{"id":"way/51848986"
+,"quality":504
 ,"name":"Rheydter Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678103,51.199212]
@@ -1027,12 +1133,14 @@
 ]}}
 ,{"type":"Feature","id":"way/52027368"
 ,"properties":{"id":"way/52027368"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.684601,51.197939]
 ,[6.684718,51.198019]
 ]}}
 ,{"type":"Feature","id":"way/52515912"
 ,"properties":{"id":"way/52515912"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.685294,51.194522]
 ,[6.685263,51.194477]
@@ -1042,12 +1150,14 @@
 ]}}
 ,{"type":"Feature","id":"way/56426415"
 ,"properties":{"id":"way/56426415"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.697722,51.193108]
 ,[6.698211,51.193571]
 ]}}
 ,{"type":"Feature","id":"way/56426416"
 ,"properties":{"id":"way/56426416"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.697137,51.192513]
 ,[6.697238,51.192524]
@@ -1060,12 +1170,14 @@
 ]}}
 ,{"type":"Feature","id":"way/56427765"
 ,"properties":{"id":"way/56427765"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.693022,51.192680]
 ,[6.692531,51.192708]
 ]}}
 ,{"type":"Feature","id":"way/57045677"
 ,"properties":{"id":"way/57045677"
+,"quality":504
 ,"name":"Deutsche Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.682166,51.193542]
@@ -1073,6 +1185,7 @@
 ]}}
 ,{"type":"Feature","id":"way/57045678"
 ,"properties":{"id":"way/57045678"
+,"quality":501
 ,"name":"Franz-Kellermann-Weg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.683395,51.193830]
@@ -1095,6 +1208,7 @@
 ]}}
 ,{"type":"Feature","id":"way/58514681"
 ,"properties":{"id":"way/58514681"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678461,51.206169]
@@ -1103,6 +1217,7 @@
 ]}}
 ,{"type":"Feature","id":"way/62421382"
 ,"properties":{"id":"way/62421382"
+,"quality":504
 ,"name":"Nordkanalallee"
 },"geometry":{"type":"LineString","coordinates":[
 [6.698963,51.191097]
@@ -1112,6 +1227,7 @@
 ]}}
 ,{"type":"Feature","id":"way/62421384"
 ,"properties":{"id":"way/62421384"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.701080,51.192754]
 ,[6.701008,51.192715]
@@ -1130,6 +1246,7 @@
 ]}}
 ,{"type":"Feature","id":"way/67503783"
 ,"properties":{"id":"way/67503783"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.687811,51.193443]
 ,[6.687665,51.193466]
@@ -1156,6 +1273,7 @@
 ]}}
 ,{"type":"Feature","id":"way/68145810"
 ,"properties":{"id":"way/68145810"
+,"quality":504
 ,"name":"Selikumer Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.699671,51.192190]
@@ -1163,6 +1281,7 @@
 ]}}
 ,{"type":"Feature","id":"way/68145813"
 ,"properties":{"id":"way/68145813"
+,"quality":504
 ,"name":"Selikumer Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.699399,51.191937]
@@ -1170,6 +1289,7 @@
 ]}}
 ,{"type":"Feature","id":"way/71568239"
 ,"properties":{"id":"way/71568239"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.700215,51.193773]
 ,[6.700266,51.193800]
@@ -1179,6 +1299,7 @@
 ]}}
 ,{"type":"Feature","id":"way/76190390"
 ,"properties":{"id":"way/76190390"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691208,51.193023]
 ,[6.689660,51.193345]
@@ -1193,6 +1314,7 @@
 ]}}
 ,{"type":"Feature","id":"way/79370046"
 ,"properties":{"id":"way/79370046"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678922,51.205860]
@@ -1203,6 +1325,7 @@
 ]}}
 ,{"type":"Feature","id":"way/79378974"
 ,"properties":{"id":"way/79378974"
+,"quality":504
 ,"name":"Josefstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678630,51.206132]
@@ -1214,6 +1337,7 @@
 ]}}
 ,{"type":"Feature","id":"way/79378980"
 ,"properties":{"id":"way/79378980"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678461,51.206169]
@@ -1222,6 +1346,7 @@
 ]}}
 ,{"type":"Feature","id":"way/80181181"
 ,"properties":{"id":"way/80181181"
+,"quality":504
 ,"name":"Josefstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.679033,51.206534]
@@ -1232,6 +1357,7 @@
 ]}}
 ,{"type":"Feature","id":"way/80511497"
 ,"properties":{"id":"way/80511497"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.679223,51.205684]
@@ -1241,6 +1367,7 @@
 ]}}
 ,{"type":"Feature","id":"way/80830514"
 ,"properties":{"id":"way/80830514"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.696816,51.200581]
 ,[6.696610,51.200524]
@@ -1249,6 +1376,7 @@
 ]}}
 ,{"type":"Feature","id":"way/83260999"
 ,"properties":{"id":"way/83260999"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686570,51.198549]
 ,[6.686569,51.198607]
@@ -1259,18 +1387,21 @@
 ]}}
 ,{"type":"Feature","id":"way/87260396"
 ,"properties":{"id":"way/87260396"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.683103,51.196833]
 ,[6.683203,51.196896]
 ]}}
 ,{"type":"Feature","id":"way/87260407"
 ,"properties":{"id":"way/87260407"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.683218,51.196905]
 ,[6.683236,51.196916]
 ]}}
 ,{"type":"Feature","id":"way/87381955"
 ,"properties":{"id":"way/87381955"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.684019,51.203297]
 ,[6.684091,51.203276]
@@ -1281,12 +1412,14 @@
 ]}}
 ,{"type":"Feature","id":"way/87381958"
 ,"properties":{"id":"way/87381958"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.683469,51.197179]
 ,[6.683475,51.197261]
 ]}}
 ,{"type":"Feature","id":"way/87425839"
 ,"properties":{"id":"way/87425839"
+,"quality":504
 ,"name":"Düsseldorfer Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.688392,51.206682]
@@ -1296,12 +1429,14 @@
 ]}}
 ,{"type":"Feature","id":"way/87535424"
 ,"properties":{"id":"way/87535424"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.688108,51.197979]
 ,[6.687988,51.198057]
 ]}}
 ,{"type":"Feature","id":"way/87677715"
 ,"properties":{"id":"way/87677715"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.687819,51.189775]
 ,[6.688296,51.190059]
@@ -1309,6 +1444,7 @@
 ]}}
 ,{"type":"Feature","id":"way/88213454"
 ,"properties":{"id":"way/88213454"
+,"quality":504
 ,"name":"Deutsche Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.682825,51.194768]
@@ -1316,18 +1452,21 @@
 ]}}
 ,{"type":"Feature","id":"way/88368299"
 ,"properties":{"id":"way/88368299"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695062,51.202152]
 ,[6.695138,51.202174]
 ]}}
 ,{"type":"Feature","id":"way/88368350"
 ,"properties":{"id":"way/88368350"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695157,51.202023]
 ,[6.695237,51.202046]
 ]}}
 ,{"type":"Feature","id":"way/90261034"
 ,"properties":{"id":"way/90261034"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.681928,51.204141]
@@ -1337,6 +1476,7 @@
 ]}}
 ,{"type":"Feature","id":"way/90261046"
 ,"properties":{"id":"way/90261046"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678922,51.205860]
@@ -1345,6 +1485,7 @@
 ]}}
 ,{"type":"Feature","id":"way/98925687"
 ,"properties":{"id":"way/98925687"
+,"quality":502
 ,"name":"Wierstraetweg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.687886,51.199037]
@@ -1352,6 +1493,7 @@
 ]}}
 ,{"type":"Feature","id":"way/98925695"
 ,"properties":{"id":"way/98925695"
+,"quality":502
 ,"name":"Wierstraetweg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.688043,51.198779]
@@ -1364,6 +1506,7 @@
 ]}}
 ,{"type":"Feature","id":"way/99574666"
 ,"properties":{"id":"way/99574666"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.706388,51.194294]
 ,[6.706198,51.194351]
@@ -1372,6 +1515,7 @@
 ]}}
 ,{"type":"Feature","id":"way/99906607"
 ,"properties":{"id":"way/99906607"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.708092,51.191901]
 ,[6.708142,51.191953]
@@ -1381,6 +1525,7 @@
 ]}}
 ,{"type":"Feature","id":"way/99906611"
 ,"properties":{"id":"way/99906611"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.707699,51.191951]
 ,[6.707746,51.191932]
@@ -1393,6 +1538,7 @@
 ]}}
 ,{"type":"Feature","id":"way/99906615"
 ,"properties":{"id":"way/99906615"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.707753,51.191532]
 ,[6.708026,51.191830]
@@ -1400,18 +1546,21 @@
 ]}}
 ,{"type":"Feature","id":"way/104131426"
 ,"properties":{"id":"way/104131426"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.679969,51.200117]
 ,[6.679948,51.200078]
 ]}}
 ,{"type":"Feature","id":"way/104131427"
 ,"properties":{"id":"way/104131427"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680064,51.200183]
 ,[6.680027,51.200105]
 ]}}
 ,{"type":"Feature","id":"way/107458522"
 ,"properties":{"id":"way/107458522"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680686,51.195216]
 ,[6.680561,51.195364]
@@ -1419,12 +1568,14 @@
 ]}}
 ,{"type":"Feature","id":"way/107458523"
 ,"properties":{"id":"way/107458523"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.676966,51.196564]
 ,[6.677072,51.196632]
 ]}}
 ,{"type":"Feature","id":"way/109284090"
 ,"properties":{"id":"way/109284090"
+,"quality":501
 ,"name":"Kurze Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.677846,51.202546]
@@ -1432,6 +1583,7 @@
 ]}}
 ,{"type":"Feature","id":"way/109284104"
 ,"properties":{"id":"way/109284104"
+,"quality":501
 ,"name":"Kurze Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.677434,51.202429]
@@ -1440,12 +1592,14 @@
 ]}}
 ,{"type":"Feature","id":"way/109361189"
 ,"properties":{"id":"way/109361189"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.677231,51.203119]
 ,[6.677255,51.203150]
 ]}}
 ,{"type":"Feature","id":"way/109361201"
 ,"properties":{"id":"way/109361201"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.677334,51.203128]
 ,[6.677255,51.203150]
@@ -1457,12 +1611,14 @@
 ]}}
 ,{"type":"Feature","id":"way/109361225"
 ,"properties":{"id":"way/109361225"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.676974,51.202745]
 ,[6.677004,51.202774]
 ]}}
 ,{"type":"Feature","id":"way/109361260"
 ,"properties":{"id":"way/109361260"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.676206,51.203063]
 ,[6.676271,51.203038]
@@ -1476,12 +1632,14 @@
 ]}}
 ,{"type":"Feature","id":"way/109361312"
 ,"properties":{"id":"way/109361312"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.677048,51.203170]
 ,[6.677071,51.203199]
 ]}}
 ,{"type":"Feature","id":"way/109368071"
 ,"properties":{"id":"way/109368071"
+,"quality":501
 ,"name":"Zufuhrstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.679227,51.202945]
@@ -1499,6 +1657,7 @@
 ]}}
 ,{"type":"Feature","id":"way/109636520"
 ,"properties":{"id":"way/109636520"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.685876,51.188821]
 ,[6.686195,51.189012]
@@ -1510,6 +1669,7 @@
 ]}}
 ,{"type":"Feature","id":"way/109722080"
 ,"properties":{"id":"way/109722080"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.693263,51.195804]
 ,[6.693214,51.195763]
@@ -1517,6 +1677,7 @@
 ]}}
 ,{"type":"Feature","id":"way/109895116"
 ,"properties":{"id":"way/109895116"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.694877,51.196499]
 ,[6.694951,51.196549]
@@ -1526,6 +1687,7 @@
 ]}}
 ,{"type":"Feature","id":"way/109895118"
 ,"properties":{"id":"way/109895118"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.694605,51.196640]
 ,[6.694724,51.196560]
@@ -1533,6 +1695,7 @@
 ]}}
 ,{"type":"Feature","id":"way/110040998"
 ,"properties":{"id":"way/110040998"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680454,51.199463]
 ,[6.680546,51.199480]
@@ -1541,24 +1704,28 @@
 ]}}
 ,{"type":"Feature","id":"way/110041000"
 ,"properties":{"id":"way/110041000"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680599,51.199528]
 ,[6.680646,51.199599]
 ]}}
 ,{"type":"Feature","id":"way/110041002"
 ,"properties":{"id":"way/110041002"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680260,51.199433]
 ,[6.680454,51.199463]
 ]}}
 ,{"type":"Feature","id":"way/110996999"
 ,"properties":{"id":"way/110996999"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695359,51.194984]
 ,[6.695245,51.194894]
 ]}}
 ,{"type":"Feature","id":"way/115396644"
 ,"properties":{"id":"way/115396644"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691885,51.192587]
 ,[6.691942,51.192572]
@@ -1568,12 +1735,14 @@
 ]}}
 ,{"type":"Feature","id":"way/115396645"
 ,"properties":{"id":"way/115396645"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691948,51.192820]
 ,[6.691879,51.192834]
 ]}}
 ,{"type":"Feature","id":"way/115396653"
 ,"properties":{"id":"way/115396653"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691885,51.192587]
 ,[6.691842,51.192529]
@@ -1584,18 +1753,21 @@
 ]}}
 ,{"type":"Feature","id":"way/115396655"
 ,"properties":{"id":"way/115396655"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692054,51.192957]
 ,[6.692020,51.192889]
 ]}}
 ,{"type":"Feature","id":"way/115396659"
 ,"properties":{"id":"way/115396659"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692009,51.192867]
 ,[6.692004,51.192855]
 ]}}
 ,{"type":"Feature","id":"way/118044369"
 ,"properties":{"id":"way/118044369"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691651,51.202559]
 ,[6.691669,51.202533]
@@ -1604,18 +1776,21 @@
 ]}}
 ,{"type":"Feature","id":"way/122423276"
 ,"properties":{"id":"way/122423276"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.693214,51.195763]
 ,[6.693190,51.195775]
 ]}}
 ,{"type":"Feature","id":"way/122682996"
 ,"properties":{"id":"way/122682996"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.702561,51.193419]
 ,[6.702658,51.193335]
 ]}}
 ,{"type":"Feature","id":"way/123585852"
 ,"properties":{"id":"way/123585852"
+,"quality":501
 ,"name":"Stauffenbergstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.677968,51.198570]
@@ -1628,6 +1803,7 @@
 ]}}
 ,{"type":"Feature","id":"way/123585853"
 ,"properties":{"id":"way/123585853"
+,"quality":501
 ,"name":"Stauffenbergstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.679245,51.198248]
@@ -1639,18 +1815,21 @@
 ]}}
 ,{"type":"Feature","id":"way/124082814"
 ,"properties":{"id":"way/124082814"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.679067,51.196976]
 ,[6.679095,51.196848]
 ]}}
 ,{"type":"Feature","id":"way/124082816"
 ,"properties":{"id":"way/124082816"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.679058,51.197056]
 ,[6.679067,51.196976]
 ]}}
 ,{"type":"Feature","id":"way/124082817"
 ,"properties":{"id":"way/124082817"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.679095,51.196848]
 ,[6.679108,51.196567]
@@ -1659,6 +1838,7 @@
 ]}}
 ,{"type":"Feature","id":"way/124578144"
 ,"properties":{"id":"way/124578144"
+,"quality":501
 ,"name":"Bismarckstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678309,51.198217]
@@ -1668,6 +1848,7 @@
 ]}}
 ,{"type":"Feature","id":"way/125768854"
 ,"properties":{"id":"way/125768854"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678142,51.206303]
@@ -1676,12 +1857,14 @@
 ]}}
 ,{"type":"Feature","id":"way/128663136"
 ,"properties":{"id":"way/128663136"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.685361,51.203108]
 ,[6.685486,51.203009]
 ]}}
 ,{"type":"Feature","id":"way/129114178"
 ,"properties":{"id":"way/129114178"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692351,51.202310]
 ,[6.692174,51.202467]
@@ -1696,6 +1879,7 @@
 ]}}
 ,{"type":"Feature","id":"way/131342639"
 ,"properties":{"id":"way/131342639"
+,"quality":504
 ,"name":"Düsseldorfer Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.686813,51.204813]
@@ -1707,6 +1891,7 @@
 ]}}
 ,{"type":"Feature","id":"way/132720945"
 ,"properties":{"id":"way/132720945"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.679018,51.195700]
 ,[6.678956,51.195715]
@@ -1725,6 +1910,7 @@
 ]}}
 ,{"type":"Feature","id":"way/132720947"
 ,"properties":{"id":"way/132720947"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.678775,51.196348]
 ,[6.678801,51.196252]
@@ -1735,18 +1921,21 @@
 ]}}
 ,{"type":"Feature","id":"way/132720948"
 ,"properties":{"id":"way/132720948"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.678065,51.196021]
 ,[6.678153,51.196111]
 ]}}
 ,{"type":"Feature","id":"way/132720950"
 ,"properties":{"id":"way/132720950"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.678688,51.195783]
 ,[6.678766,51.195881]
 ]}}
 ,{"type":"Feature","id":"way/134563803"
 ,"properties":{"id":"way/134563803"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.678615,51.196249]
 ,[6.678650,51.196003]
@@ -1754,6 +1943,7 @@
 ]}}
 ,{"type":"Feature","id":"way/134563804"
 ,"properties":{"id":"way/134563804"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.678834,51.195914]
 ,[6.678732,51.195942]
@@ -1762,30 +1952,35 @@
 ]}}
 ,{"type":"Feature","id":"way/135303546"
 ,"properties":{"id":"way/135303546"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.697659,51.198790]
 ,[6.697682,51.198760]
 ]}}
 ,{"type":"Feature","id":"way/135303551"
 ,"properties":{"id":"way/135303551"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698012,51.198907]
 ,[6.698035,51.198881]
 ]}}
 ,{"type":"Feature","id":"way/135303552"
 ,"properties":{"id":"way/135303552"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.696983,51.198626]
 ,[6.697006,51.198587]
 ]}}
 ,{"type":"Feature","id":"way/135303554"
 ,"properties":{"id":"way/135303554"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.697215,51.198676]
 ,[6.697241,51.198636]
 ]}}
 ,{"type":"Feature","id":"way/135303556"
 ,"properties":{"id":"way/135303556"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698323,51.199032]
 ,[6.698346,51.199005]
@@ -1826,6 +2021,7 @@
 ]}}
 ,{"type":"Feature","id":"way/135303558"
 ,"properties":{"id":"way/135303558"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698484,51.199098]
 ,[6.698449,51.199136]
@@ -1834,6 +2030,7 @@
 ]}}
 ,{"type":"Feature","id":"way/135303559"
 ,"properties":{"id":"way/135303559"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.697937,51.199073]
 ,[6.697986,51.199015]
@@ -1842,6 +2039,7 @@
 ]}}
 ,{"type":"Feature","id":"way/135303560"
 ,"properties":{"id":"way/135303560"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698075,51.196129]
 ,[6.698059,51.196104]
@@ -1856,6 +2054,7 @@
 ]}}
 ,{"type":"Feature","id":"way/135907126"
 ,"properties":{"id":"way/135907126"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.700076,51.193408]
 ,[6.700170,51.193464]
@@ -1874,6 +2073,7 @@
 ]}}
 ,{"type":"Feature","id":"way/135907129"
 ,"properties":{"id":"way/135907129"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.701080,51.192754]
 ,[6.701173,51.192808]
@@ -1897,6 +2097,7 @@
 ]}}
 ,{"type":"Feature","id":"way/136738993"
 ,"properties":{"id":"way/136738993"
+,"quality":502
 ,"name":"Hermannsplatz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.681474,51.199696]
@@ -1907,6 +2108,7 @@
 ]}}
 ,{"type":"Feature","id":"way/137639601"
 ,"properties":{"id":"way/137639601"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.683570,51.203236]
 ,[6.683463,51.203190]
@@ -1923,6 +2125,7 @@
 ]}}
 ,{"type":"Feature","id":"way/145590794"
 ,"properties":{"id":"way/145590794"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.683460,51.203150]
 ,[6.683547,51.203099]
@@ -1932,12 +2135,14 @@
 ]}}
 ,{"type":"Feature","id":"way/146635051"
 ,"properties":{"id":"way/146635051"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686640,51.206472]
 ,[6.686380,51.206181]
 ]}}
 ,{"type":"Feature","id":"way/146635062"
 ,"properties":{"id":"way/146635062"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686083,51.206794]
 ,[6.686282,51.206735]
@@ -1951,6 +2156,7 @@
 ]}}
 ,{"type":"Feature","id":"way/148215713"
 ,"properties":{"id":"way/148215713"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692370,51.192136]
 ,[6.692365,51.192155]
@@ -1965,6 +2171,7 @@
 ]}}
 ,{"type":"Feature","id":"way/148323177"
 ,"properties":{"id":"way/148323177"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698913,51.194140]
 ,[6.698931,51.194148]
@@ -1974,6 +2181,7 @@
 ]}}
 ,{"type":"Feature","id":"way/148323179"
 ,"properties":{"id":"way/148323179"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.699222,51.193683]
 ,[6.699334,51.193667]
@@ -1983,18 +2191,21 @@
 ]}}
 ,{"type":"Feature","id":"way/148595679"
 ,"properties":{"id":"way/148595679"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692020,51.192889]
 ,[6.692009,51.192867]
 ]}}
 ,{"type":"Feature","id":"way/148618608"
 ,"properties":{"id":"way/148618608"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.694552,51.202484]
 ,[6.694576,51.202492]
 ]}}
 ,{"type":"Feature","id":"way/149467991"
 ,"properties":{"id":"way/149467991"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698381,51.191544]
 ,[6.696666,51.191904]
@@ -2008,30 +2219,35 @@
 ]}}
 ,{"type":"Feature","id":"way/149467994"
 ,"properties":{"id":"way/149467994"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692004,51.192855]
 ,[6.691935,51.192699]
 ]}}
 ,{"type":"Feature","id":"way/149467995"
 ,"properties":{"id":"way/149467995"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691935,51.192699]
 ,[6.691885,51.192587]
 ]}}
 ,{"type":"Feature","id":"way/149467998"
 ,"properties":{"id":"way/149467998"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.698290,51.191345]
 ,[6.698358,51.191501]
 ]}}
 ,{"type":"Feature","id":"way/149620886"
 ,"properties":{"id":"way/149620886"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.690821,51.202339]
 ,[6.691126,51.202419]
 ]}}
 ,{"type":"Feature","id":"way/149620891"
 ,"properties":{"id":"way/149620891"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691126,51.202419]
 ,[6.691176,51.202392]
@@ -2040,6 +2256,7 @@
 ]}}
 ,{"type":"Feature","id":"way/149620892"
 ,"properties":{"id":"way/149620892"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691132,51.202106]
 ,[6.691040,51.202082]
@@ -2051,6 +2268,7 @@
 ]}}
 ,{"type":"Feature","id":"way/150491036"
 ,"properties":{"id":"way/150491036"
+,"quality":504
 ,"name":"Rheintorstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.689865,51.205366]
@@ -2059,6 +2277,7 @@
 ]}}
 ,{"type":"Feature","id":"way/150872981"
 ,"properties":{"id":"way/150872981"
+,"quality":504
 ,"name":"Hammfelddamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.708673,51.192100]
@@ -2068,6 +2287,7 @@
 ]}}
 ,{"type":"Feature","id":"way/150873041"
 ,"properties":{"id":"way/150873041"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.707686,51.189808]
 ,[6.707662,51.189926]
@@ -2082,6 +2302,7 @@
 ]}}
 ,{"type":"Feature","id":"way/152065133"
 ,"properties":{"id":"way/152065133"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.694471,51.196260]
 ,[6.694514,51.196258]
@@ -2089,6 +2310,7 @@
 ]}}
 ,{"type":"Feature","id":"way/152065134"
 ,"properties":{"id":"way/152065134"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.693810,51.196114]
 ,[6.693984,51.196111]
@@ -2100,30 +2322,35 @@
 ]}}
 ,{"type":"Feature","id":"way/156233627"
 ,"properties":{"id":"way/156233627"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686125,51.196938]
 ,[6.686281,51.196881]
 ]}}
 ,{"type":"Feature","id":"way/156233628"
 ,"properties":{"id":"way/156233628"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686211,51.197112]
 ,[6.686110,51.197046]
 ]}}
 ,{"type":"Feature","id":"way/156233629"
 ,"properties":{"id":"way/156233629"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686542,51.197038]
 ,[6.686422,51.197119]
 ]}}
 ,{"type":"Feature","id":"way/156494996"
 ,"properties":{"id":"way/156494996"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.684450,51.195927]
 ,[6.684551,51.195858]
 ]}}
 ,{"type":"Feature","id":"way/156993560"
 ,"properties":{"id":"way/156993560"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.704420,51.201581]
 ,[6.704544,51.201639]
@@ -2187,6 +2414,7 @@
 ]}}
 ,{"type":"Feature","id":"way/156993566"
 ,"properties":{"id":"way/156993566"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.715962,51.202621]
 ,[6.716011,51.202589]
@@ -2257,6 +2485,7 @@
 ]}}
 ,{"type":"Feature","id":"way/156993573"
 ,"properties":{"id":"way/156993573"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.716396,51.203029]
 ,[6.716354,51.202999]
@@ -2320,6 +2549,7 @@
 ]}}
 ,{"type":"Feature","id":"way/157725948"
 ,"properties":{"id":"way/157725948"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.703347,51.193467]
 ,[6.703317,51.193536]
@@ -2328,6 +2558,7 @@
 ]}}
 ,{"type":"Feature","id":"way/158027416"
 ,"properties":{"id":"way/158027416"
+,"quality":504
 ,"name":"Hammfelddamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.708966,51.192670]
@@ -2336,12 +2567,14 @@
 ]}}
 ,{"type":"Feature","id":"way/160260709"
 ,"properties":{"id":"way/160260709"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695533,51.198185]
 ,[6.695423,51.198155]
 ]}}
 ,{"type":"Feature","id":"way/160260710"
 ,"properties":{"id":"way/160260710"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695398,51.198148]
 ,[6.695331,51.198121]
@@ -2349,12 +2582,14 @@
 ]}}
 ,{"type":"Feature","id":"way/160260713"
 ,"properties":{"id":"way/160260713"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695252,51.198343]
 ,[6.695308,51.198359]
 ]}}
 ,{"type":"Feature","id":"way/168290174"
 ,"properties":{"id":"way/168290174"
+,"quality":505
 ,"name":"Hesemannstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.683226,51.197189]
@@ -2364,6 +2599,7 @@
 ]}}
 ,{"type":"Feature","id":"way/169268770"
 ,"properties":{"id":"way/169268770"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695295,51.198590]
 ,[6.695220,51.198571]
@@ -2374,6 +2610,7 @@
 ]}}
 ,{"type":"Feature","id":"way/173678185"
 ,"properties":{"id":"way/173678185"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686192,51.200454]
 ,[6.686235,51.200429]
@@ -2389,24 +2626,28 @@
 ]}}
 ,{"type":"Feature","id":"way/173678188"
 ,"properties":{"id":"way/173678188"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686390,51.200767]
 ,[6.686327,51.200725]
 ]}}
 ,{"type":"Feature","id":"way/173678190"
 ,"properties":{"id":"way/173678190"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.688490,51.199359]
 ,[6.688435,51.199384]
 ]}}
 ,{"type":"Feature","id":"way/173678192"
 ,"properties":{"id":"way/173678192"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686718,51.200370]
 ,[6.687014,51.200385]
 ]}}
 ,{"type":"Feature","id":"way/173678197"
 ,"properties":{"id":"way/173678197"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686600,51.200407]
 ,[6.686656,51.200373]
@@ -2414,6 +2655,7 @@
 ]}}
 ,{"type":"Feature","id":"way/173678200"
 ,"properties":{"id":"way/173678200"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.688676,51.199239]
 ,[6.688571,51.199170]
@@ -2422,6 +2664,7 @@
 ]}}
 ,{"type":"Feature","id":"way/173678201"
 ,"properties":{"id":"way/173678201"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.688126,51.198248]
 ,[6.688225,51.198268]
@@ -2431,6 +2674,7 @@
 ]}}
 ,{"type":"Feature","id":"way/173678202"
 ,"properties":{"id":"way/173678202"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686536,51.200575]
 ,[6.686471,51.200542]
@@ -2441,6 +2685,7 @@
 ]}}
 ,{"type":"Feature","id":"way/173678203"
 ,"properties":{"id":"way/173678203"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.688455,51.199575]
 ,[6.688574,51.199512]
@@ -2453,12 +2698,14 @@
 ]}}
 ,{"type":"Feature","id":"way/173840418"
 ,"properties":{"id":"way/173840418"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.684917,51.192128]
 ,[6.684601,51.191926]
 ]}}
 ,{"type":"Feature","id":"way/173840421"
 ,"properties":{"id":"way/173840421"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.684601,51.191926]
 ,[6.684521,51.191874]
@@ -2466,6 +2713,7 @@
 ]}}
 ,{"type":"Feature","id":"way/173840424"
 ,"properties":{"id":"way/173840424"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.684973,51.191771]
 ,[6.684951,51.191788]
@@ -2480,6 +2728,7 @@
 ]}}
 ,{"type":"Feature","id":"way/173840425"
 ,"properties":{"id":"way/173840425"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.685150,51.192199]
 ,[6.685082,51.192153]
@@ -2488,6 +2737,7 @@
 ]}}
 ,{"type":"Feature","id":"way/173840428"
 ,"properties":{"id":"way/173840428"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.684916,51.192168]
 ,[6.684917,51.192128]
@@ -2498,6 +2748,7 @@
 ]}}
 ,{"type":"Feature","id":"way/173840434"
 ,"properties":{"id":"way/173840434"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.688086,51.193788]
 ,[6.688042,51.193756]
@@ -2505,6 +2756,7 @@
 ]}}
 ,{"type":"Feature","id":"way/175479727"
 ,"properties":{"id":"way/175479727"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.703060,51.194065]
 ,[6.703009,51.194000]
@@ -2515,6 +2767,7 @@
 ]}}
 ,{"type":"Feature","id":"way/175482155"
 ,"properties":{"id":"way/175482155"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698963,51.191097]
 ,[6.698872,51.191176]
@@ -2522,6 +2775,7 @@
 ]}}
 ,{"type":"Feature","id":"way/175482156"
 ,"properties":{"id":"way/175482156"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698271,51.191304]
 ,[6.696537,51.191662]
@@ -2530,6 +2784,7 @@
 ]}}
 ,{"type":"Feature","id":"way/176364080"
 ,"properties":{"id":"way/176364080"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.683347,51.203357]
@@ -2539,6 +2794,7 @@
 ]}}
 ,{"type":"Feature","id":"way/182377095"
 ,"properties":{"id":"way/182377095"
+,"quality":505
 ,"name":"Weingartstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.695471,51.188419]
@@ -2560,12 +2816,14 @@
 ]}}
 ,{"type":"Feature","id":"way/182514129"
 ,"properties":{"id":"way/182514129"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.690764,51.199546]
 ,[6.690993,51.199607]
 ]}}
 ,{"type":"Feature","id":"way/195168065"
 ,"properties":{"id":"way/195168065"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.679989,51.190802]
 ,[6.679939,51.190815]
@@ -2574,6 +2832,7 @@
 ]}}
 ,{"type":"Feature","id":"way/198463701"
 ,"properties":{"id":"way/198463701"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.677647,51.189560]
 ,[6.677739,51.189615]
@@ -2587,6 +2846,7 @@
 ]}}
 ,{"type":"Feature","id":"way/198465756"
 ,"properties":{"id":"way/198465756"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680313,51.190578]
 ,[6.680350,51.190897]
@@ -2599,6 +2859,7 @@
 ]}}
 ,{"type":"Feature","id":"way/200335051"
 ,"properties":{"id":"way/200335051"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.696202,51.198656]
 ,[6.695998,51.198621]
@@ -2609,6 +2870,7 @@
 ]}}
 ,{"type":"Feature","id":"way/204716492"
 ,"properties":{"id":"way/204716492"
+,"quality":503
 },"geometry":{"type":"LineString","coordinates":[
 [6.680134,51.200048]
 ,[6.680076,51.200010]
@@ -2619,12 +2881,14 @@
 ]}}
 ,{"type":"Feature","id":"way/215310304"
 ,"properties":{"id":"way/215310304"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695277,51.198417]
 ,[6.695308,51.198359]
 ]}}
 ,{"type":"Feature","id":"way/222305659"
 ,"properties":{"id":"way/222305659"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.688947,51.205445]
 ,[6.689041,51.205425]
@@ -2643,12 +2907,14 @@
 ]}}
 ,{"type":"Feature","id":"way/225009706"
 ,"properties":{"id":"way/225009706"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.682877,51.194611]
 ,[6.682925,51.194705]
 ]}}
 ,{"type":"Feature","id":"way/225009708"
 ,"properties":{"id":"way/225009708"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.682216,51.193251]
 ,[6.682267,51.193329]
@@ -2656,6 +2922,7 @@
 ]}}
 ,{"type":"Feature","id":"way/225009711"
 ,"properties":{"id":"way/225009711"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.682624,51.193204]
 ,[6.682807,51.193280]
@@ -2665,6 +2932,7 @@
 ]}}
 ,{"type":"Feature","id":"way/225009712"
 ,"properties":{"id":"way/225009712"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.682925,51.194705]
 ,[6.682946,51.194743]
@@ -2673,12 +2941,14 @@
 ]}}
 ,{"type":"Feature","id":"way/225009713"
 ,"properties":{"id":"way/225009713"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.682306,51.193416]
 ,[6.682262,51.193465]
 ]}}
 ,{"type":"Feature","id":"way/225009714"
 ,"properties":{"id":"way/225009714"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.681568,51.192150]
 ,[6.682108,51.193173]
@@ -2687,6 +2957,7 @@
 ]}}
 ,{"type":"Feature","id":"way/225009715"
 ,"properties":{"id":"way/225009715"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.685140,51.191572]
 ,[6.685134,51.191655]
@@ -2702,6 +2973,7 @@
 ]}}
 ,{"type":"Feature","id":"way/225009716"
 ,"properties":{"id":"way/225009716"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.685140,51.191572]
 ,[6.685010,51.191653]
@@ -2713,6 +2985,7 @@
 ]}}
 ,{"type":"Feature","id":"way/225916726"
 ,"properties":{"id":"way/225916726"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.682377,51.193674]
 ,[6.682512,51.193931]
@@ -2721,6 +2994,7 @@
 ]}}
 ,{"type":"Feature","id":"way/227795558"
 ,"properties":{"id":"way/227795558"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680196,51.195829]
 ,[6.680105,51.195800]
@@ -2728,6 +3002,7 @@
 ]}}
 ,{"type":"Feature","id":"way/227795559"
 ,"properties":{"id":"way/227795559"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680321,51.195721]
 ,[6.680263,51.195789]
@@ -2735,6 +3010,7 @@
 ]}}
 ,{"type":"Feature","id":"way/227795560"
 ,"properties":{"id":"way/227795560"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.682870,51.196972]
 ,[6.682720,51.196984]
@@ -2746,6 +3022,7 @@
 ]}}
 ,{"type":"Feature","id":"way/229092372"
 ,"properties":{"id":"way/229092372"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695659,51.198096]
 ,[6.695638,51.198058]
@@ -2764,6 +3041,7 @@
 ]}}
 ,{"type":"Feature","id":"way/229092373"
 ,"properties":{"id":"way/229092373"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695308,51.198359]
 ,[6.695344,51.198357]
@@ -2778,6 +3056,7 @@
 ]}}
 ,{"type":"Feature","id":"way/229443356"
 ,"properties":{"id":"way/229443356"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.701269,51.196763]
 ,[6.701345,51.196811]
@@ -2791,6 +3070,7 @@
 ]}}
 ,{"type":"Feature","id":"way/229443358"
 ,"properties":{"id":"way/229443358"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.701430,51.196837]
 ,[6.701330,51.196871]
@@ -2798,6 +3078,7 @@
 ]}}
 ,{"type":"Feature","id":"way/229443361"
 ,"properties":{"id":"way/229443361"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.702832,51.200061]
 ,[6.702786,51.200089]
@@ -2808,6 +3089,7 @@
 ]}}
 ,{"type":"Feature","id":"way/229443362"
 ,"properties":{"id":"way/229443362"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.701573,51.197715]
 ,[6.701448,51.197720]
@@ -2817,6 +3099,7 @@
 ]}}
 ,{"type":"Feature","id":"way/229443364"
 ,"properties":{"id":"way/229443364"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.703589,51.196749]
 ,[6.703430,51.196733]
@@ -2829,6 +3112,7 @@
 ]}}
 ,{"type":"Feature","id":"way/229443365"
 ,"properties":{"id":"way/229443365"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.701548,51.198710]
 ,[6.702188,51.199357]
@@ -2923,6 +3207,7 @@
 ]}}
 ,{"type":"Feature","id":"way/229677740"
 ,"properties":{"id":"way/229677740"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.704423,51.190326]
 ,[6.704471,51.190295]
@@ -2930,6 +3215,7 @@
 ]}}
 ,{"type":"Feature","id":"way/229677742"
 ,"properties":{"id":"way/229677742"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.704632,51.190444]
 ,[6.704556,51.190410]
@@ -2938,12 +3224,14 @@
 ]}}
 ,{"type":"Feature","id":"way/230851040"
 ,"properties":{"id":"way/230851040"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.682096,51.193598]
 ,[6.682166,51.193542]
 ]}}
 ,{"type":"Feature","id":"way/230851044"
 ,"properties":{"id":"way/230851044"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.682096,51.193598]
 ,[6.682063,51.193593]
@@ -2953,6 +3241,7 @@
 ]}}
 ,{"type":"Feature","id":"way/230851047"
 ,"properties":{"id":"way/230851047"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.681428,51.192364]
 ,[6.681350,51.192236]
@@ -2963,6 +3252,7 @@
 ]}}
 ,{"type":"Feature","id":"way/230851049"
 ,"properties":{"id":"way/230851049"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.681852,51.193537]
 ,[6.681941,51.193441]
@@ -2971,6 +3261,7 @@
 ]}}
 ,{"type":"Feature","id":"way/230851051"
 ,"properties":{"id":"way/230851051"
+,"quality":501
 ,"name":"Wierstraetweg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.689876,51.196968]
@@ -2982,18 +3273,21 @@
 ]}}
 ,{"type":"Feature","id":"way/231735719"
 ,"properties":{"id":"way/231735719"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.678057,51.198436]
 ,[6.678008,51.198422]
 ]}}
 ,{"type":"Feature","id":"way/231735720"
 ,"properties":{"id":"way/231735720"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.678239,51.198305]
 ,[6.678122,51.198276]
 ]}}
 ,{"type":"Feature","id":"way/236289470"
 ,"properties":{"id":"way/236289470"
+,"quality":501
 ,"name":"Wierstraetweg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.689300,51.197285]
@@ -3001,6 +3295,7 @@
 ]}}
 ,{"type":"Feature","id":"way/236289471"
 ,"properties":{"id":"way/236289471"
+,"quality":501
 ,"name":"Wierstraetweg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.688551,51.197980]
@@ -3010,12 +3305,14 @@
 ]}}
 ,{"type":"Feature","id":"way/238843609"
 ,"properties":{"id":"way/238843609"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691283,51.197769]
 ,[6.691244,51.197860]
 ]}}
 ,{"type":"Feature","id":"way/238843610"
 ,"properties":{"id":"way/238843610"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691627,51.197570]
 ,[6.691451,51.197680]
@@ -3024,6 +3321,7 @@
 ]}}
 ,{"type":"Feature","id":"way/242626692"
 ,"properties":{"id":"way/242626692"
+,"quality":504
 ,"name":"Theodor-Heuss-Platz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.685196,51.203800]
@@ -3033,6 +3331,7 @@
 ]}}
 ,{"type":"Feature","id":"way/242626693"
 ,"properties":{"id":"way/242626693"
+,"quality":504
 ,"name":"Theodor-Heuss-Platz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.685762,51.203828]
@@ -3045,6 +3344,7 @@
 ]}}
 ,{"type":"Feature","id":"way/246642766"
 ,"properties":{"id":"way/246642766"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.682790,51.195009]
 ,[6.682761,51.194972]
@@ -3054,6 +3354,7 @@
 ]}}
 ,{"type":"Feature","id":"way/246642767"
 ,"properties":{"id":"way/246642767"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680686,51.195216]
 ,[6.680872,51.194977]
@@ -3065,24 +3366,28 @@
 ]}}
 ,{"type":"Feature","id":"way/249067704"
 ,"properties":{"id":"way/249067704"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.682671,51.194649]
 ,[6.682096,51.193598]
 ]}}
 ,{"type":"Feature","id":"way/249067705"
 ,"properties":{"id":"way/249067705"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.682724,51.194744]
 ,[6.682671,51.194649]
 ]}}
 ,{"type":"Feature","id":"way/254917149"
 ,"properties":{"id":"way/254917149"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.694299,51.199567]
 ,[6.694642,51.199664]
 ]}}
 ,{"type":"Feature","id":"way/254917151"
 ,"properties":{"id":"way/254917151"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.693620,51.199287]
 ,[6.693730,51.199304]
@@ -3093,6 +3398,7 @@
 ]}}
 ,{"type":"Feature","id":"way/264000645"
 ,"properties":{"id":"way/264000645"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.688533,51.190121]
 ,[6.688368,51.190019]
@@ -3103,12 +3409,14 @@
 ]}}
 ,{"type":"Feature","id":"way/264000646"
 ,"properties":{"id":"way/264000646"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.688300,51.189789]
 ,[6.688106,51.189638]
 ]}}
 ,{"type":"Feature","id":"way/268724047"
 ,"properties":{"id":"way/268724047"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.699710,51.190067]
 ,[6.699646,51.190084]
@@ -3133,6 +3441,7 @@
 ]}}
 ,{"type":"Feature","id":"way/279075372"
 ,"properties":{"id":"way/279075372"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680467,51.203308]
 ,[6.680368,51.203444]
@@ -3144,12 +3453,14 @@
 ]}}
 ,{"type":"Feature","id":"way/308429637"
 ,"properties":{"id":"way/308429637"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.687641,51.189969]
 ,[6.687543,51.189923]
 ]}}
 ,{"type":"Feature","id":"way/308568250"
 ,"properties":{"id":"way/308568250"
+,"quality":504
 ,"name":"Hammfelddamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.708373,51.191783]
@@ -3158,6 +3469,7 @@
 ]}}
 ,{"type":"Feature","id":"way/308568251"
 ,"properties":{"id":"way/308568251"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.708092,51.191901]
 ,[6.708183,51.191857]
@@ -3166,6 +3478,7 @@
 ]}}
 ,{"type":"Feature","id":"way/311972207"
 ,"properties":{"id":"way/311972207"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.685954,51.192886]
 ,[6.685899,51.192741]
@@ -3181,6 +3494,7 @@
 ]}}
 ,{"type":"Feature","id":"way/314030013"
 ,"properties":{"id":"way/314030013"
+,"quality":502
 ,"name":"Pierburgbrücke"
 },"geometry":{"type":"LineString","coordinates":[
 [6.690520,51.205596]
@@ -3189,6 +3503,7 @@
 ]}}
 ,{"type":"Feature","id":"way/314455311"
 ,"properties":{"id":"way/314455311"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.691864,51.205909]
 ,[6.691926,51.205939]
@@ -3198,6 +3513,7 @@
 ]}}
 ,{"type":"Feature","id":"way/317290396"
 ,"properties":{"id":"way/317290396"
+,"quality":504
 ,"name":"Theodor-Heuss-Platz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.685717,51.204018]
@@ -3205,6 +3521,7 @@
 ]}}
 ,{"type":"Feature","id":"way/317290397"
 ,"properties":{"id":"way/317290397"
+,"quality":504
 ,"name":"Theodor-Heuss-Platz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.685540,51.203942]
@@ -3212,6 +3529,7 @@
 ]}}
 ,{"type":"Feature","id":"way/319801627"
 ,"properties":{"id":"way/319801627"
+,"quality":504
 ,"name":"Am Kehlturm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.695637,51.197169]
@@ -3221,12 +3539,14 @@
 ]}}
 ,{"type":"Feature","id":"way/324042689"
 ,"properties":{"id":"way/324042689"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691681,51.196843]
 ,[6.691660,51.196824]
 ]}}
 ,{"type":"Feature","id":"way/325938184"
 ,"properties":{"id":"way/325938184"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692223,51.200764]
 ,[6.692248,51.200721]
@@ -3234,6 +3554,7 @@
 ]}}
 ,{"type":"Feature","id":"way/342285362"
 ,"properties":{"id":"way/342285362"
+,"quality":504
 ,"name":"Gielenstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.680704,51.199956]
@@ -3247,6 +3568,7 @@
 ]}}
 ,{"type":"Feature","id":"way/342285364"
 ,"properties":{"id":"way/342285364"
+,"quality":504
 ,"name":"Stephanstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.679494,51.200000]
@@ -3263,18 +3585,21 @@
 ]}}
 ,{"type":"Feature","id":"way/342285365"
 ,"properties":{"id":"way/342285365"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680134,51.200048]
 ,[6.680553,51.199982]
 ]}}
 ,{"type":"Feature","id":"way/342285366"
 ,"properties":{"id":"way/342285366"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680704,51.199956]
 ,[6.680553,51.199982]
 ]}}
 ,{"type":"Feature","id":"way/342285367"
 ,"properties":{"id":"way/342285367"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.680646,51.199599]
 ,[6.680800,51.199851]
@@ -3286,6 +3611,7 @@
 ]}}
 ,{"type":"Feature","id":"way/343001932"
 ,"properties":{"id":"way/343001932"
+,"quality":502
 },"geometry":{"type":"LineString","coordinates":[
 [6.698396,51.191637]
 ,[6.698377,51.191660]
@@ -3297,12 +3623,14 @@
 ]}}
 ,{"type":"Feature","id":"way/345397404"
 ,"properties":{"id":"way/345397404"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692377,51.192535]
 ,[6.692473,51.192537]
 ]}}
 ,{"type":"Feature","id":"way/375291094"
 ,"properties":{"id":"way/375291094"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692174,51.202467]
 ,[6.691925,51.202689]
@@ -3314,24 +3642,28 @@
 ]}}
 ,{"type":"Feature","id":"way/375291106"
 ,"properties":{"id":"way/375291106"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691925,51.202689]
 ,[6.691716,51.202901]
 ]}}
 ,{"type":"Feature","id":"way/375462004"
 ,"properties":{"id":"way/375462004"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.703108,51.193119]
 ,[6.703061,51.193090]
 ]}}
 ,{"type":"Feature","id":"way/375462007"
 ,"properties":{"id":"way/375462007"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.700170,51.193464]
 ,[6.700868,51.193015]
 ]}}
 ,{"type":"Feature","id":"way/377531874"
 ,"properties":{"id":"way/377531874"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695500,51.198657]
 ,[6.695456,51.198642]
@@ -3340,6 +3672,7 @@
 ]}}
 ,{"type":"Feature","id":"way/377531876"
 ,"properties":{"id":"way/377531876"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.698038,51.199109]
 ,[6.697937,51.199073]
@@ -3352,6 +3685,7 @@
 ]}}
 ,{"type":"Feature","id":"way/377531878"
 ,"properties":{"id":"way/377531878"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.694355,51.199062]
 ,[6.694354,51.199194]
@@ -3361,6 +3695,7 @@
 ]}}
 ,{"type":"Feature","id":"way/377531879"
 ,"properties":{"id":"way/377531879"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.694922,51.196809]
 ,[6.695141,51.196766]
@@ -3369,6 +3704,7 @@
 ]}}
 ,{"type":"Feature","id":"way/377531880"
 ,"properties":{"id":"way/377531880"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695500,51.198657]
 ,[6.695227,51.198920]
@@ -3376,6 +3712,7 @@
 ]}}
 ,{"type":"Feature","id":"way/377536876"
 ,"properties":{"id":"way/377536876"
+,"quality":504
 ,"name":"Selikumer Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.699008,51.191187]
@@ -3383,6 +3720,7 @@
 ]}}
 ,{"type":"Feature","id":"way/377536879"
 ,"properties":{"id":"way/377536879"
+,"quality":504
 ,"name":"Selikumer Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.699075,51.191331]
@@ -3390,6 +3728,7 @@
 ]}}
 ,{"type":"Feature","id":"way/379132964"
 ,"properties":{"id":"way/379132964"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.703384,51.193785]
 ,[6.703236,51.193729]
@@ -3402,6 +3741,7 @@
 ]}}
 ,{"type":"Feature","id":"way/379132965"
 ,"properties":{"id":"way/379132965"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.701558,51.193274]
 ,[6.701437,51.193191]
@@ -3411,12 +3751,14 @@
 ]}}
 ,{"type":"Feature","id":"way/384391198"
 ,"properties":{"id":"way/384391198"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.679851,51.192858]
 ,[6.679743,51.192831]
 ]}}
 ,{"type":"Feature","id":"way/388451889"
 ,"properties":{"id":"way/388451889"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695024,51.199151]
 ,[6.694950,51.199177]
@@ -3425,6 +3767,7 @@
 ]}}
 ,{"type":"Feature","id":"way/395659696"
 ,"properties":{"id":"way/395659696"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691893,51.193381]
 ,[6.691896,51.193347]
@@ -3432,6 +3775,7 @@
 ]}}
 ,{"type":"Feature","id":"way/397511233"
 ,"properties":{"id":"way/397511233"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.688894,51.205211]
 ,[6.688941,51.205248]
@@ -3440,6 +3784,7 @@
 ]}}
 ,{"type":"Feature","id":"way/400562300"
 ,"properties":{"id":"way/400562300"
+,"quality":502
 ,"name":"Hafenmole"
 },"geometry":{"type":"LineString","coordinates":[
 [6.693431,51.208652]
@@ -3482,6 +3827,7 @@
 ]}}
 ,{"type":"Feature","id":"way/400831626"
 ,"properties":{"id":"way/400831626"
+,"quality":502
 ,"name":"Straatenplatz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.690051,51.205363]
@@ -3491,6 +3837,7 @@
 ]}}
 ,{"type":"Feature","id":"way/400831630"
 ,"properties":{"id":"way/400831630"
+,"quality":502
 ,"name":"Straatenplatz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.689782,51.205496]
@@ -3500,6 +3847,7 @@
 ]}}
 ,{"type":"Feature","id":"way/407971195"
 ,"properties":{"id":"way/407971195"
+,"quality":504
 ,"name":"Nordkanalallee"
 },"geometry":{"type":"LineString","coordinates":[
 [6.700321,51.190812]
@@ -3511,12 +3859,14 @@
 ]}}
 ,{"type":"Feature","id":"way/409080982"
 ,"properties":{"id":"way/409080982"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.690501,51.194867]
 ,[6.690584,51.194892]
 ]}}
 ,{"type":"Feature","id":"way/409842546"
 ,"properties":{"id":"way/409842546"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.704637,51.192500]
 ,[6.705020,51.192420]
@@ -3525,6 +3875,7 @@
 ]}}
 ,{"type":"Feature","id":"way/409842547"
 ,"properties":{"id":"way/409842547"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.702658,51.193335]
 ,[6.702717,51.193289]
@@ -3545,6 +3896,7 @@
 ]}}
 ,{"type":"Feature","id":"way/409842548"
 ,"properties":{"id":"way/409842548"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.705651,51.192324]
 ,[6.705839,51.192307]
@@ -3560,6 +3912,7 @@
 ]}}
 ,{"type":"Feature","id":"way/410357985"
 ,"properties":{"id":"way/410357985"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.706316,51.193153]
 ,[6.706159,51.192994]
@@ -3567,6 +3920,7 @@
 ]}}
 ,{"type":"Feature","id":"way/410357987"
 ,"properties":{"id":"way/410357987"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.705490,51.194578]
 ,[6.705868,51.194818]
@@ -3579,6 +3933,7 @@
 ]}}
 ,{"type":"Feature","id":"way/411764824"
 ,"properties":{"id":"way/411764824"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.694469,51.195297]
 ,[6.694476,51.195267]
@@ -3586,12 +3941,14 @@
 ]}}
 ,{"type":"Feature","id":"way/412126090"
 ,"properties":{"id":"way/412126090"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.699908,51.193892]
 ,[6.699861,51.193830]
 ]}}
 ,{"type":"Feature","id":"way/412126098"
 ,"properties":{"id":"way/412126098"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.700170,51.194310]
 ,[6.700183,51.194333]
@@ -3608,6 +3965,7 @@
 ]}}
 ,{"type":"Feature","id":"way/412809264"
 ,"properties":{"id":"way/412809264"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.708398,51.192204]
 ,[6.708453,51.192147]
@@ -3615,6 +3973,7 @@
 ]}}
 ,{"type":"Feature","id":"way/412809265"
 ,"properties":{"id":"way/412809265"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.708596,51.191858]
 ,[6.708608,51.191893]
@@ -3623,6 +3982,7 @@
 ]}}
 ,{"type":"Feature","id":"way/412809267"
 ,"properties":{"id":"way/412809267"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.708393,51.191669]
 ,[6.708423,51.191713]
@@ -3632,18 +3992,21 @@
 ]}}
 ,{"type":"Feature","id":"way/414613964"
 ,"properties":{"id":"way/414613964"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692204,51.196948]
 ,[6.692142,51.196899]
 ]}}
 ,{"type":"Feature","id":"way/414613965"
 ,"properties":{"id":"way/414613965"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692070,51.196842]
 ,[6.692135,51.196809]
 ]}}
 ,{"type":"Feature","id":"way/414613967"
 ,"properties":{"id":"way/414613967"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692134,51.196892]
 ,[6.692070,51.196842]
@@ -3651,6 +4014,7 @@
 ]}}
 ,{"type":"Feature","id":"way/417887041"
 ,"properties":{"id":"way/417887041"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692285,51.197016]
 ,[6.692254,51.196990]
@@ -3658,6 +4022,7 @@
 ]}}
 ,{"type":"Feature","id":"way/419042025"
 ,"properties":{"id":"way/419042025"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691637,51.196946]
 ,[6.691614,51.196951]
@@ -3666,6 +4031,7 @@
 ]}}
 ,{"type":"Feature","id":"way/419042027"
 ,"properties":{"id":"way/419042027"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691681,51.196843]
 ,[6.691745,51.196898]
@@ -3673,6 +4039,7 @@
 ]}}
 ,{"type":"Feature","id":"way/419042029"
 ,"properties":{"id":"way/419042029"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691575,51.196933]
 ,[6.691653,51.196929]
@@ -3682,6 +4049,7 @@
 ]}}
 ,{"type":"Feature","id":"way/419042032"
 ,"properties":{"id":"way/419042032"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691362,51.197004]
 ,[6.691370,51.197000]
@@ -3691,6 +4059,7 @@
 ]}}
 ,{"type":"Feature","id":"way/421606645"
 ,"properties":{"id":"way/421606645"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695243,51.198480]
 ,[6.695110,51.198432]
@@ -3698,6 +4067,7 @@
 ]}}
 ,{"type":"Feature","id":"way/421606646"
 ,"properties":{"id":"way/421606646"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.695088,51.198397]
 ,[6.695214,51.198377]
@@ -3706,6 +4076,7 @@
 ]}}
 ,{"type":"Feature","id":"way/425270885"
 ,"properties":{"id":"way/425270885"
+,"quality":504
 ,"name":"Düsseldorfer Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.688025,51.206116]
@@ -3713,6 +4084,7 @@
 ]}}
 ,{"type":"Feature","id":"way/425270905"
 ,"properties":{"id":"way/425270905"
+,"quality":504
 ,"name":"Gielenstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.681779,51.201541]
@@ -3720,6 +4092,7 @@
 ]}}
 ,{"type":"Feature","id":"way/425270907"
 ,"properties":{"id":"way/425270907"
+,"quality":504
 ,"name":"Gielenstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.682006,51.201785]
@@ -3728,6 +4101,7 @@
 ]}}
 ,{"type":"Feature","id":"way/425270908"
 ,"properties":{"id":"way/425270908"
+,"quality":504
 ,"name":"Gielenstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.682225,51.201982]
@@ -3741,6 +4115,7 @@
 ]}}
 ,{"type":"Feature","id":"way/425270916"
 ,"properties":{"id":"way/425270916"
+,"quality":504
 ,"name":"Theodor-Heuss-Platz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.685357,51.203661]
@@ -3750,6 +4125,7 @@
 ]}}
 ,{"type":"Feature","id":"way/425314553"
 ,"properties":{"id":"way/425314553"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.680343,51.205073]
@@ -3757,6 +4133,7 @@
 ]}}
 ,{"type":"Feature","id":"way/425314555"
 ,"properties":{"id":"way/425314555"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.681540,51.204375]
@@ -3765,6 +4142,7 @@
 ]}}
 ,{"type":"Feature","id":"way/426108039"
 ,"properties":{"id":"way/426108039"
+,"quality":504
 ,"name":"Jülicher Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.688946,51.190601]
@@ -3772,6 +4150,7 @@
 ]}}
 ,{"type":"Feature","id":"way/426311387"
 ,"properties":{"id":"way/426311387"
+,"quality":504
 ,"name":"Rheydter Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.677238,51.199196]
@@ -3781,6 +4160,7 @@
 ]}}
 ,{"type":"Feature","id":"way/426990846"
 ,"properties":{"id":"way/426990846"
+,"quality":504
 ,"name":"Hammfelddamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.708020,51.191415]
@@ -3788,6 +4168,7 @@
 ]}}
 ,{"type":"Feature","id":"way/426990847"
 ,"properties":{"id":"way/426990847"
+,"quality":504
 ,"name":"Hammfelddamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.708453,51.192147]
@@ -3795,6 +4176,7 @@
 ]}}
 ,{"type":"Feature","id":"way/427127460"
 ,"properties":{"id":"way/427127460"
+,"quality":505
 ,"name":"Hermannsplatz"
 },"geometry":{"type":"LineString","coordinates":[
 [6.682080,51.199664]
@@ -3803,6 +4185,7 @@
 ]}}
 ,{"type":"Feature","id":"way/427127469"
 ,"properties":{"id":"way/427127469"
+,"quality":504
 ,"name":"Nordkanalallee"
 },"geometry":{"type":"LineString","coordinates":[
 [6.699884,51.190897]
@@ -3810,6 +4193,7 @@
 ]}}
 ,{"type":"Feature","id":"way/427127471"
 ,"properties":{"id":"way/427127471"
+,"quality":504
 ,"name":"Selikumer Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.699231,51.191643]
@@ -3818,6 +4202,7 @@
 ]}}
 ,{"type":"Feature","id":"way/427127472"
 ,"properties":{"id":"way/427127472"
+,"quality":504
 ,"name":"Selikumer Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.700034,51.192453]
@@ -3827,18 +4212,21 @@
 ]}}
 ,{"type":"Feature","id":"way/438127082"
 ,"properties":{"id":"way/438127082"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.693757,51.195160]
 ,[6.693746,51.195151]
 ]}}
 ,{"type":"Feature","id":"way/438127083"
 ,"properties":{"id":"way/438127083"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691208,51.193023]
 ,[6.691272,51.193122]
 ]}}
 ,{"type":"Feature","id":"way/441644026"
 ,"properties":{"id":"way/441644026"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.685150,51.192199]
 ,[6.684916,51.192168]
@@ -3862,18 +4250,21 @@
 ]}}
 ,{"type":"Feature","id":"way/446359253"
 ,"properties":{"id":"way/446359253"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.683093,51.193341]
 ,[6.683071,51.193390]
 ]}}
 ,{"type":"Feature","id":"way/496354921"
 ,"properties":{"id":"way/496354921"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.691614,51.196951]
 ,[6.691619,51.196960]
 ]}}
 ,{"type":"Feature","id":"way/505777631"
 ,"properties":{"id":"way/505777631"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678556,51.206173]
@@ -3882,6 +4273,7 @@
 ]}}
 ,{"type":"Feature","id":"way/505777632"
 ,"properties":{"id":"way/505777632"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678630,51.206132]
@@ -3890,6 +4282,7 @@
 ]}}
 ,{"type":"Feature","id":"way/505777633"
 ,"properties":{"id":"way/505777633"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678632,51.206065]
@@ -3898,6 +4291,7 @@
 ]}}
 ,{"type":"Feature","id":"way/505777634"
 ,"properties":{"id":"way/505777634"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678564,51.206024]
@@ -3906,6 +4300,7 @@
 ]}}
 ,{"type":"Feature","id":"way/505777635"
 ,"properties":{"id":"way/505777635"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678490,51.206020]
@@ -3914,6 +4309,7 @@
 ]}}
 ,{"type":"Feature","id":"way/505777636"
 ,"properties":{"id":"way/505777636"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678398,51.206069]
@@ -3922,6 +4318,7 @@
 ]}}
 ,{"type":"Feature","id":"way/505777637"
 ,"properties":{"id":"way/505777637"
+,"quality":504
 ,"name":"Further Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.678396,51.206122]
@@ -3930,6 +4327,7 @@
 ]}}
 ,{"type":"Feature","id":"way/621453955"
 ,"properties":{"id":"way/621453955"
+,"quality":504
 ,"name":"Hammfelddamm"
 },"geometry":{"type":"LineString","coordinates":[
 [6.708592,51.192011]
@@ -3937,12 +4335,14 @@
 ]}}
 ,{"type":"Feature","id":"way/621453956"
 ,"properties":{"id":"way/621453956"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.708592,51.192011]
 ,[6.708652,51.191945]
 ]}}
 ,{"type":"Feature","id":"way/627357264"
 ,"properties":{"id":"way/627357264"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.689158,51.205558]
 ,[6.689288,51.205549]
@@ -3950,6 +4350,7 @@
 ]}}
 ,{"type":"Feature","id":"way/688986335"
 ,"properties":{"id":"way/688986335"
+,"quality":501
 ,"name":"Wierstraetweg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.692596,51.195735]
@@ -3957,6 +4358,7 @@
 ]}}
 ,{"type":"Feature","id":"way/688986336"
 ,"properties":{"id":"way/688986336"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.692554,51.195694]
 ,[6.692709,51.195651]
@@ -3964,12 +4366,14 @@
 ]}}
 ,{"type":"Feature","id":"way/688986337"
 ,"properties":{"id":"way/688986337"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.689431,51.197111]
 ,[6.689521,51.197032]
 ]}}
 ,{"type":"Feature","id":"way/688986338"
 ,"properties":{"id":"way/688986338"
+,"quality":501
 ,"name":"Wierstraetweg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.692836,51.195630]
@@ -3977,6 +4381,7 @@
 ]}}
 ,{"type":"Feature","id":"way/699079147"
 ,"properties":{"id":"way/699079147"
+,"quality":501
 ,"name":"Lützowstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.679989,51.190802]
@@ -3986,12 +4391,14 @@
 ]}}
 ,{"type":"Feature","id":"way/704647062"
 ,"properties":{"id":"way/704647062"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.687807,51.189906]
 ,[6.687738,51.189974]
 ]}}
 ,{"type":"Feature","id":"way/704647063"
 ,"properties":{"id":"way/704647063"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.687738,51.189974]
 ,[6.687706,51.189968]
@@ -4000,6 +4407,7 @@
 ]}}
 ,{"type":"Feature","id":"way/706494001"
 ,"properties":{"id":"way/706494001"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.681967,51.193386]
 ,[6.681735,51.192935]
@@ -4008,6 +4416,7 @@
 ]}}
 ,{"type":"Feature","id":"way/711508218"
 ,"properties":{"id":"way/711508218"
+,"quality":501
 },"geometry":{"type":"LineString","coordinates":[
 [6.686310,51.193210]
 ,[6.686270,51.193231]

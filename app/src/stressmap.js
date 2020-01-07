@@ -195,13 +195,34 @@ function getFeaturesNearby(point, maxMeters, breakOnFirst)
   return ret;
 }
 
+const qualityLevels = {
+        501: "This way is a separated path because highway='path'.",
+        502: "This way is a separated path because highway='footway' but it is not a crossing.",
+        503: "This way is a separated path because highway='cycleway'.",
+        504: "This way is a separated path because cycleway* is defined as 'track'.",
+        505: "This way is a separated path because cycleway* is defined as 'opposite_track'.",
+        1: "Cycling not permitted due to bicycle='no' tag.",
+        10: "Cycling not permitted due to bicycle='use_sidepath' tag.",
+        2: "Cycling not permitted due to access='no' tag.",
+        3: "Cycling not permitted due to highway='motorway' tag.",
+        4: "Cycling not permitted due to highway='motorway_link' tag.",
+        5: "Cycling not permitted due to highway='proposed' tag.",
+        8: "Cycling not permitted due to highway='construction' tag.",
+        6: "Cycling not permitted. When footway='sidewalk' is present, there must be a bicycle='yes' when the highway is 'footway'.",
+        7: "Cycling not permitted. When footway='sidewalk' is present, there must be a bicycle='yes' when the highway is 'path'.",
+        101: "footway with cycleway",
+        102: "jfootway with explicit bicycle",
+        9: "footway without explicit cycleway or bicycle",
+        100: "highway or bicycle in tags",
+	0: "Way has neither a highway tag nor a bicycle=yes tag. The way is not a highway."
+}
 
 function displayOsmElementInfo(element, latlng) {
 
   const xhr = new XMLHttpRequest()
-  xhr.open('GET','https://api.openstreetmap.org/api/0.6/'+element)
+  xhr.open('GET','https://api.openstreetmap.org/api/0.6/'+element.id)
   xhr.onload = function () {
-    let popup = '<b><a href="https://www.openstreetmap.org/' + element + '" target="_blank">' + element + '</a></b><hr>'
+    let popup = '<b><a href="https://www.openstreetmap.org/' + element.id + '" target="_blank">' + element.id + '</a></b><br>quality: ' + element.properties.quality + ' ' + qualityLevels[element.properties.quality] + '<hr>'
     if (xhr.status === 200) {
       const xmlDOM = new DOMParser().parseFromString(xhr.responseText, 'text/xml');
       const tags = xmlDOM.getElementsByTagName("tag");
@@ -240,7 +261,7 @@ map.on('click', function(e) {
   }
   const features = getFeaturesNearby([e.latlng.lng,e.latlng.lat], 5, true);
   if (features.length!=0) {
-    displayOsmElementInfo(features[0].id, e.latlng);
+    displayOsmElementInfo(features[0], e.latlng);
     highlight = new L.geoJson(features[0],{style: {color:'#df42f4',  weight: 5}}).addTo(map);
     map.on('popupclose', function() {
      map.removeLayer(highlight)
