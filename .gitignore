@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# vi temporary files
+*.swp
+
+# python virtualenv
+venv3

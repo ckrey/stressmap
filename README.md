@@ -18,3 +18,8 @@ Current Examples:
 * Darmstadt https://ckrey.github.io/stressmap/app/index.html?town=darmstadt
 * Karlsruhe https://ckrey.github.io/stressmap/app/index.html?town=karlsruhe
 * _others? – create a Issue/PR_
+
+# TODO describe download and processing of .osm files
+- download .bz2 file from e.g. https://download.geofabrik.de/europe/germany/nordrhein-westfalen/duesseldorf-regbez.html
+- gunzip
+- in ../stressmodel node main.js -f ~/bike-stress/berlin-latest.osm -d ~/bike-stress/berlin  -z
