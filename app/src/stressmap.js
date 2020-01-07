@@ -17,6 +17,12 @@ if (town == 'neuss') {
 	map = L.map('mapid').setView([50.9976, 6.8409], 9)
 } else if (town == 'hamburg') {
 	map = L.map('mapid').setView([53.5586, 10.0785], 10)
+} else if (town == 'hessen') {
+	map = L.map('mapid').setView([53.5586, 10.0785], 10)
+} else if (town == 'niedersachsen') {
+	map = L.map('mapid').setView([53.5586, 10.0785], 10)
+} else if (town == 'rheinland-pfalz') {
+	map = L.map('mapid').setView([53.5586, 10.0785], 10)
 } else {
         town = 'berlin'
 	map = L.map('mapid').setView([52.5173, 13.3889], 10)
