@@ -4,11 +4,9 @@ var town = urlParams.get('town');
 var map;
 
 if (town == 'neuss') {
-	map = L.map('mapid').setView([51.20, 6.69], 14)
+	map = L.map('mapid').setView([51.1762, 6.7066], 12)
 } else if (town == 'neuss-small-overpass') {
 	map = L.map('mapid').setView([51.2, 6.69], 13)
-} else if (town == 'neuss-overpass') {
-	map = L.map('mapid').setView([51.1762, 6.7066], 12)
 } else if (town == 'darmstadt') {
 	map = L.map('mapid').setView([49.8730, 8.60], 11)
 } else if (town == 'duesseldorf') {
