@@ -19,7 +19,15 @@ Current Examples:
 * Karlsruhe https://ckrey.github.io/stressmap/app/index.html?town=karlsruhe
 * _others? – create a Issue/PR_
 
-# TODO describe download and processing of .osm files
-- download .bz2 file from e.g. https://download.geofabrik.de/europe/germany/nordrhein-westfalen/duesseldorf-regbez.html
-- gunzip
-- in ../stressmodel node main.js -f ~/bike-stress/berlin-latest.osm -d ~/bike-stress/berlin  -z
+* add `&lts=yes` to see Levels of Traffic Stress (lts) layers too
+
+# TODO describe quality algorithm
+
+# make
+	run `make overpass` to retrieve the `.osm` files for neuss and darmstadt
+	run `make geofabrik` to retrieve the `.osm` files for berlin, hamburg, etc.
+	run `make` to process the `.osm` files into geojson
+
+The last step includes running the stressmodel from Ottawa assuming this is installed in `../stressmodel`
+e.g. `../stressmodel node main.js -f ~/bike-stress/berlin-latest.osm -d ~/bike-stress/berlin  -z`:w
+
