@@ -38,16 +38,16 @@ app/data/karlsruhe/level_0.json: osmfiles/karlsruhe-regbez-latest.osm
 app/data/karlsruhe/quality_0.json: osmfiles/karlsruhe-regbez-latest.osm.json
 	./quality.py -i $< -o $(@D)
 
-app/data/berlin/quality_0.json: osmfiles/berlin-latest.osm.json
+app/data/berlin/quality_0.json: osmfiles/berlin.osm.json
 	./quality.py -i $< -o $(@D)
 
-app/data/berlin/level_0.json: osmfiles/berlin-latest.osm 
+app/data/berlin/level_0.json: osmfiles/berlin.osm 
 	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
-app/data/hamburg/quality_0.json: osmfiles/hamburg-latest.osm.json
+app/data/hamburg/quality_0.json: osmfiles/hamburg.osm.json
 	./quality.py -i $< -o $(@D)
 
-app/data/hamburg/level_0.json: osmfiles/hamburg-latest.osm 
+app/data/hamburg/level_0.json: osmfiles/hamburg.osm 
 	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
 app/data/darmstadt/quality_0.json: osmfiles/darmstadt.osm.json
