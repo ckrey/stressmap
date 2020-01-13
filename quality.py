@@ -1,26 +1,34 @@
 #!/usr/bin/env python -B
-""" quality.py parses an .osm file and creates quality rated geojson files as overlays
+""" quality.py parses an .osm.json file and creates quality rated geojson files as overlays
 """
 
-import xml.sax
 import getopt
 import os
 import sys
+import json
 
 DEBUG_OUT = open(os.devnull, "w")
 WAYS = {}
 OSM_NODES = {}
 HIGHWAY_TYPES = {}
+LEVELS = {}
+AREAS = 0
+PLATFORMS = 0
 ELEMENT_TYPES = {}
+ACCESS_TYPES = {}
 USED_NODES = {}
 
-class OSMNode:
+class OSMNode(dict):
     """ OSMNode represents an OSM Node
     """
     def __init__(self, identifier, lon, lat):
-        self.identifier = identifier
-        self.lon = lon
-        self.lat = lat
+        self['identifier'] = identifier
+        self['lon'] = lon
+        self['lat'] = lat
+        #self.identifier = identifier
+        #self.lon = lon
+        #self.lat = lat
+
 
 def tag_starts_with(tags, start):
     for tag in tags:
@@ -41,27 +49,49 @@ def effective_highway(tags, value):
         return tags['highway'] == value
     return False
 
+def cycleway(old_level, tags):
+    if effective_highway(tags, 'cycleway'):
+        # 700 This way is a cycleway because highway='cycleway'.
+        return 700
+
+    return old_level # no cycleway
+
+def cyclestreet(old_level, tags):
+    if 'cyclestreet' in tags and tags['cyclestreet'] == 'yes':
+        # 401 This way is a cyclestreet because cyclestreet='yes'.
+        return 401
+    if 'bicycle_road' in tags and tags['bicycle_road'] == 'yes':
+        # 402 This way is a cyclestreet because bicycle_road='yes'.
+        return 402
+
+    return old_level # no cyclestreet
+
 def separated_path(old_level, tags):
     if effective_highway(tags, 'path'):
         # 501 This way is a separated path because highway='path'.
         return 501
 
-    if effective_highway(tags, 'footway'):
-        if 'footway' not in tags or tags['footway'] != 'crossing':
-            # 502 This way is a separated path because highway='footway' but it is not a crossing.
-            return 502
+    return old_level # not separated
 
-    if effective_highway(tags, 'cycleway'):
-        # 503 This way is a separated path because highway='cycleway'.
-        return 503
-
+def track(old_level, tags):
     if tag_starts_with_value(tags, 'cycleway', 'track'):
-        # 504 This way is a separated path because cycleway* is defined as \'track\'.
-        return 504
+        # 301 This way is a separated path because cycleway* is defined as 'track'.
+        return 304
 
     if tag_starts_with_value(tags, 'cycleway', 'opposite_track'):
-        # 505 This way is a separated path because cycleway* is defined as \'opposite_track\'.
-        return 505
+        # 302 This way is a separated path because cycleway* is defined as 'opposite_track'.
+        return 305
+
+    return old_level # not separated
+
+def lane(old_level, tags):
+    if tag_starts_with_value(tags, 'cycleway', 'lane'):
+        # 201 This way has a lane because cycleway* is defined as 'lane'.
+        return 201
+
+    if tag_starts_with_value(tags, 'cycleway', 'opposite_lane'):
+        # 202 This way has a lane cycleway* is defined as 'opposite_lane'.
+        return 202
 
     return old_level # not separated
 
@@ -77,7 +107,9 @@ def biking_permitted(tags):
             # 10 Cycling not permitted due to bicycle='use_sidepath' tag.
             return 10
         if 'access' in tags and tags['access'] == 'no':
-            # 2 Cycling not permitted due to access='no' tag.
+            if 'bicycle' in tags and not tags['bicycle'] == 'no':
+                return 100
+            # 2 Cycling not permitted due to access='no' tag without bicyle != 'no'.
             return 2
 
         if effective_highway(tags, 'motorway'):
@@ -92,6 +124,12 @@ def biking_permitted(tags):
         if effective_highway(tags, 'construction'):
             # 8 Cycling not permitted due to highway='construction' tag.
             return 8
+        if effective_highway(tags, 'corridor'):
+            # 11 Cycling not permitted due to highway='corridor' tag.
+            return 11
+        if effective_highway(tags, 'platform'):
+            # 12 Cycling not permitted due to highway='platform' tag.
+            return 12
 
         if 'footway' in tags and tags['footway'] == 'sidewalk':
             if 'bicycle' in tags and tags['bicycle'] == 'yes':
@@ -111,7 +149,7 @@ def biking_permitted(tags):
                 # 101 footway with cycleway
                 return 101
             if 'bicycle' in tags and tags['bicycle'] == 'yes':
-                # 102 jfootway with explicit bicycle
+                # 102 footway with explicit bicycle
                 return 102
             # 9 footway without explicit cycleway or bicycle
             return 9
@@ -124,87 +162,22 @@ def biking_permitted(tags):
 def compute_level(tags):
     _level = biking_permitted(tags)
     if _level >= 100:
+        _level = cycleway(_level, tags)
+    if _level < 200:
+        _level = cyclestreet(_level, tags)
+    if _level < 200:
+        _level = lane(_level, tags)
+    if _level < 200:
+        _level = track(_level, tags)
+    if _level < 200:
         _level = separated_path(_level, tags)
+
+    _count = 1
+    if _level in LEVELS:
+        _count = LEVELS[_level]
+        _count = _count + 1
+    LEVELS[_level] = _count
     return _level
-
-class NodeHandler(xml.sax.ContentHandler):
-    def __init__(self):
-        super().__init__()
-        self.nodeid = 0
-        self.lat = 0.0
-        self.lon = 0.0
-        self.tags = {}
-        self.way_id = 0
-        self.way_nodes = []
-        self.tags = {}
-
-    def startElement(self, name, attrs):
-        if len(OSM_NODES) % 1000 == 1 or len(WAYS) % 100 == 1 or len(USED_NODES) % 1000 == 1:
-            sys.stderr.write('Nodes {} Ways {} using {} nodes\r'.format(len(OSM_NODES), len(WAYS), len(USED_NODES)))
-        DEBUG_OUT.write('startElement {}\n'.format(name))
-        _count = 1
-        if name in ELEMENT_TYPES:
-            _count = ELEMENT_TYPES[name]
-            _count = _count + 1
-        ELEMENT_TYPES[name] = _count
-
-        for attr_name in attrs.getNames():
-            attr_type = attrs.getType(attr_name)
-            attr_value = attrs.getValue(attr_name)
-            DEBUG_OUT.write('    attribute {} {} {}\n'.format(attr_name, attr_type, attr_value))
-
-        if name == 'way':
-            self.way_id = attrs['id']
-            self.way_nodes = []
-            self.tags = {}
-
-        if name == 'node':
-            self.nodeid = attrs['id']
-            self.lat = attrs['lat']
-            self.lon = attrs['lon']
-            self.tags = {}
-
-        if name == 'nd':
-            node_ref = int(attrs['ref'])
-            self.way_nodes.append(node_ref)
-            USED_NODES[node_ref] = 1
-
-        if name == 'tag':
-            _tag_key = attrs['k']
-            _tag_value = attrs['v']
-            self.tags[_tag_key] = _tag_value
-
-    def endElement(self, name):
-        DEBUG_OUT.write('endElement {}\n'.format(name))
-
-        if name == 'way':
-            if 'highway' in self.tags:
-                _highway = self.tags['highway']
-                _level = compute_level(self.tags)
-                _way = {
-                    'id': self.way_id,
-                    'tags': self.tags,
-                    'nodes': self.way_nodes,
-                    'level': _level,
-                }
-                DEBUG_OUT.write('endElement {} {}\n'.format(name, _way))
-                WAYS[self.way_id] = _way
-
-                _count = 1
-                if _highway in HIGHWAY_TYPES:
-                    _count = HIGHWAY_TYPES[_highway]
-                    _count = _count + 1
-                HIGHWAY_TYPES[_highway] = _count
-
-                self.way_nodes = {}
-                self.tags = {}
-
-        if name == 'node':
-            _osm_node = OSMNode(int(self.nodeid), float(self.lon), float(self.lat))
-
-            DEBUG_OUT.write('endElement {} {}\n'.format(name, _osm_node))
-            OSM_NODES[int(self.nodeid)] = _osm_node
-            self.tags = {}
 
 def usage(argv0):
     print('{} [-o <output directory>] [-i <input file>]'.format(argv0))
@@ -231,18 +204,20 @@ if __name__ == "__main__":
             usage(sys.argv[0])
             sys.exit(3)
 
-    print('parsing...')
+    print('loading intermediates...')
+    intermediate_path = '%s' % IN_FILE
+    intermediate_infile = open(intermediate_path, "r")
+    intermediate = json.load(intermediate_infile)
+    OSM_NODES = intermediate['nodes']
+    WAYS = intermediate['ways']
+    intermediate_infile.close()
 
-    PARSER = xml.sax.make_parser()
-    PARSER.setFeature(xml.sax.handler.feature_namespaces, 0)
-    HANDLER = NodeHandler()
-    PARSER.setContentHandler(HANDLER)
-    PARSER.parse(IN_FILE)
-
-    print('finished parsing {} nodes and {} ways using {} nodes!'.format(len(OSM_NODES), len(WAYS), len(USED_NODES)))
-
-    print('ELEMENT_TYPES {}'.format(ELEMENT_TYPES))
-    print('HIGHWAY_TYPES {}'.format(HIGHWAY_TYPES))
+    print('calculating levels...')
+    for way_id in WAYS:
+        way = WAYS[way_id]
+        tags = way['tags']
+        level = compute_level(tags)
+        way['level'] = level
 
     print('creating files...')
 
@@ -279,7 +254,8 @@ if __name__ == "__main__":
                 for nodeId in way_nodes:
                     osm_node = OSM_NODES[nodeId]
                     outfile.write('{0:s}[{1:.6f},{2:.6f}]\n'.format(
-                        coordinateSeparator, osm_node.lon, osm_node.lat))
+                        coordinateSeparator, osm_node['lon'], osm_node['lat']))
+                        #coordinateSeparator, osm_node.lon, osm_node.lat))
                     coordinateSeparator = ','
                 outfile.write(']}}\n')
         outfile.write(']}\n')

@@ -8,45 +8,66 @@ all: \
 	app/data/karlsruhe \
 	app/data/darmstadt
 
-app/data/berlin: osmfiles/berlin-latest.osm 
-	./quality.py -i $< -o $@
-	node ../stressmodel/main.js -d $@ -f $< -i -n -v -z
-	touch $@
+%.osm.json: %.osm
+	./quality-parse.py -i $<
 
-app/data/hamburg: osmfiles/hamburg-latest.osm 
-	./quality.py -i $< -o $@
-	node ../stressmodel/main.js -d $@ -f $< -i -n -v -z
-	touch $@
+app/data/berlin: app/data/berlin/level_0.json app/data/berlin/quality_0.json
+app/data/hamburg: app/data/hamburg/level_0.json app/data/hamburg/quality_0.json
+app/data/duesseldorf: app/data/duesseldorf/level_0.json app/data/duesseldorf/quality_0.json
+app/data/koeln: app/data/koeln/level_0.json app/data/koeln/quality_0.json
+app/data/karlsruhe: app/data/karlsruhe/level_0.json app/data/karlsruhe/quality_0.json
+app/data/darmstadt: app/data/darmstadt/level_0.json app/data/darmstadt/quality_0.json
+app/data/neuss: app/data/neuss/level_0.json app/data/neuss/quality_0.json
+app/data/neuss-small-overpass: app/data/neuss-small-overpass/level_0.json app/data/neuss-small-overpass/quality_0.json
 
-app/data/duesseldorf: osmfiles/duesseldorf-regbez-latest.osm 
-	./quality.py -i $< -o $@
-	node ../stressmodel/main.js -d $@ -f $< -i -n -v -z
-	touch $@
+app/data/duesseldorf/level_0.json: osmfiles/duesseldorf-regbez-latest.osm 
+	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
-app/data/koeln: osmfiles/koeln-regbez-latest.osm 
-	./quality.py -i $< -o $@
-	node ../stressmodel/main.js -d $@ -f $< -i -n -v -z
-	touch $@
+app/data/duesseldorf/quality_0.json: osmfiles/duesseldorf-regbez-latest.osm.json
+	./quality.py -i $< -o $(@D)
 
-app/data/karlsruhe: osmfiles/karlsruhe-regbez-latest.osm 
-	./quality.py -i $< -o $@
-	node ../stressmodel/main.js -d $@ -f $< -i -n -v -z
-	touch $@
+app/data/koeln/level_0.json: osmfiles/koeln-regbez-latest.osm 
+	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
-app/data/neuss-small-overpass: osmfiles/neuss-small-overpass.osm 
-	./quality.py -i $< -o $@
-	node ../stressmodel/main.js -d $@ -f $< -i -n -v -z
-	touch $@
+app/data/koeln/quality_0.json: osmfiles/koeln-regbez-latest.osm.json
+	./quality.py -i $< -o $(@D)
 
-app/data/neuss: osmfiles/neuss.osm 
-	./quality.py -i $< -o $@
-	node ../stressmodel/main.js -d $@ -f $< -i -n -v -z
-	touch $@
+app/data/karlsruhe/level_0.json: osmfiles/karlsruhe-regbez-latest.osm 
+	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
-app/data/darmstadt-overpass: osmfiles/darmstadt-overpass.osm 
-	./quality.py -i $< -o $@
-	node ../stressmodel/main.js -d $@ -f $< -i -n -v -z
-	touch $@
+app/data/karlsruhe/quality_0.json: osmfiles/karlsruhe-regbez-latest.osm.json
+	./quality.py -i $< -o $(@D)
+
+app/data/berlin/quality_0.json: osmfiles/berlin-latest.osm.json
+	./quality.py -i $< -o $(@D)
+
+app/data/berlin/level_0.json: osmfiles/berlin-latest.osm 
+	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+
+app/data/hamburg/quality_0.json: osmfiles/hamburg-latest.osm.json
+	./quality.py -i $< -o $(@D)
+
+app/data/hamburg/level_0.json: osmfiles/hamburg-latest.osm 
+	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+
+app/data/darmstadt/quality_0.json: osmfiles/darmstadt.osm.json
+	./quality.py -i $< -o $(@D)
+
+app/data/darmstadt/level_0.json: osmfiles/darmstadt.osm 
+	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+
+app/data/neuss/quality_0.json: osmfiles/neuss.osm.json
+	./quality.py -i $< -o $(@D)
+
+app/data/neuss/level_0.json: osmfiles/neuss.osm 
+	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+
+app/data/neuss-small-overpass/level_0.json: osmfiles/neuss-small-overpass.osm 
+	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+
+app/data/neuss-small-overpass/quality_0.json: osmfiles/neuss-small-overpass.osm.json
+	./quality.py -i $< -o $(@D)
+
 
 overpass: \
 	osmfiles/neuss.osm \

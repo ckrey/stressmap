@@ -1,6 +1,7 @@
 var urlParams = new URLSearchParams(window.location.search);
 
 var town = urlParams.get('town');
+var lts = urlParams.get('lts');
 var map;
 
 if (town == 'neuss') {
@@ -26,20 +27,28 @@ if (town == 'neuss') {
 	map = L.map('mapid').setView([52.5173, 13.3889], 10)
 }
 
-const settings = [
+const ltsSettings = [
 
-{ color: '#FF7777', weight: 4, key: 'LTS0', zIndex: 1, title: 'LTS 0 - Biking not permitted', url: 'data/' + town + '/level_0.json' },
-{ color: '#0099cc', weight: 4, key: 'LTS1', zIndex: 2, title: 'LTS 1 - Suitable for Children', url: 'data/' + town + '/level_1.json' },
-{ color: '#1C7C54', weight: 4, key: 'LTS2', zIndex: 3, title: 'LTS 2 - Low Stress', url: 'data/' + town + '/level_2.json' },
-{ color: '#F0C808', weight: 4, key: 'LTS3', zIndex: 4, title: 'LTS 3 - Moderate Stress', url: 'data/' + town + '/level_3.json' },
-{ color: '#DD5454', weight: 4, key: 'LTS4', zIndex: 5, title: 'LTS 4 - High Stress', url: 'data/' + town + '/level_4.json' },
-
-{ color: '#FF0000', weight: 2, key: '0', zIndex: 6, title: '0xx - No Biking Permitted', url: 'data/' + town + '/quality_0.json' },
-{ color: '#00FF00', weight: 2, key: '1', zIndex: 7, title: '1xx - Biking Possible', url: 'data/' + town + '/quality_1.json' },
-{ color: '#0000FF', weight: 2, key: '5', zIndex: 8, title: '5xx - Biking Separated', url: 'data/' + town + '/quality_5.json' }
+{ color: '#FF7777', weight: 2, key: 'LTS0', zIndex: 11, title: 'LTS 0 - Biking not permitted', url: 'data/' + town + '/level_0.json' },
+{ color: '#0099cc', weight: 2, key: 'LTS1', zIndex: 12, title: 'LTS 1 - Suitable for Children', url: 'data/' + town + '/level_1.json' },
+{ color: '#1C7C54', weight: 2, key: 'LTS2', zIndex: 13, title: 'LTS 2 - Low Stress', url: 'data/' + town + '/level_2.json' },
+{ color: '#F0C808', weight: 2, key: 'LTS3', zIndex: 14, title: 'LTS 3 - Moderate Stress', url: 'data/' + town + '/level_3.json' },
+{ color: '#DD5454', weight: 2, key: 'LTS4', zIndex: 15, title: 'LTS 4 - High Stress', url: 'data/' + town + '/level_4.json' }
 ]
-const homePage = 'https://bikeottawa.ca/index.php/advocacy/advocacy-news/213-data_group'
-const legendTitle = 'Cycling Stress Map'
+const settings = [
+{ color: '#FF0000', weight: 4, key: 'Q0', zIndex: 1, title: '0xx - No Biking Permitted', url: 'data/' + town + '/quality_0.json' }
+,{ color: '#00FF00', weight: 4, key: 'Q1', zIndex: 2, title: '1xx - Biking on Streets or Footpaths', url: 'data/' + town + '/quality_1.json' }
+,{ color: '#FFFF00', weight: 4, key: 'Q2', zIndex: 3, title: '2xx - Biking on Marked Lanes', url: 'data/' + town + '/quality_2.json' }
+,{ color: '#00FFFF', weight: 4, key: 'Q3', zIndex: 4, title: '3xx - Biking on Tracks', url: 'data/' + town + '/quality_3.json' }
+,{ color: '#8080FF', weight: 4, key: 'Q4', zIndex: 5, title: '4xx - Biking in Cyclestreet', url: 'data/' + town + '/quality_4.json' }
+,{ color: '#0000FF', weight: 4, key: 'Q5', zIndex: 6, title: '5xx - Biking on Separated Infrastructure', url: 'data/' + town + '/quality_5.json' }
+//,{ color: '#3333CC', weight: 4, key: 'Q6', zIndex: 7, title: '6xx - Biking very good', url: 'data/' + town + '/quality_6.json' }
+,{ color: '#FF00FF', weight: 4, key: 'Q7', zIndex: 8, title: '7xx - Biking on Cycleway', url: 'data/' + town + '/quality_7.json' }
+//,{ color: '#66AADD', weight: 4, key: 'Q8', zIndex: 9, title: '8xx - Biking optimal on Earth', url: 'data/' + town + '/quality_8.json' }
+//,{ color: '#88CCFF', weight: 4, key: 'Q9', zIndex: 10, title: '9xx - Biking in Heaven', url: 'data/' + town + '/quality_9.json' }
+]
+const homePage = 'https://ckrey.github.io/stressmap/'
+const legendTitle = 'Bicycle Infrastructure Quality Map'
 const layers = {}
 const tree = rbush.rbush();
 
@@ -55,6 +64,11 @@ function addLegend () {
   legend.onAdd = function (map) {
     const div = L.DomUtil.create('div', 'info legend')
     let legendHtml = '<center><a href="' + homePage + '" target="_blank"><h3>' + legendTitle + '</h3></a></center><table>'
+    if (lts == 'yes') {
+      for (let setting of ltsSettings) {
+        legendHtml += addLegendLine(setting)
+      }
+    }
     for (let setting of settings) {
       legendHtml += addLegendLine(setting)
     }
@@ -68,6 +82,11 @@ function addLegend () {
 }
 
 function addStressLayers () {
+  if (lts == 'yes') {
+    for (let setting of ltsSettings) {
+      addStressLayerToMap(setting)
+    }
+  }
   for (let setting of settings) {
     addStressLayerToMap(setting)
   }
@@ -155,6 +174,14 @@ function addIconLayers(){
 
   const providers = [];
   providers.push({
+      title: 'osm bw',
+      icon: 'img/icons-osm-bw.png',
+      layer: L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+          maxZoom: 22,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      })
+  });
+  providers.push({
       title: 'mapnik',
       icon: 'img/icons-mapnik.png',
       layer: L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -163,14 +190,6 @@ function addIconLayers(){
       })
   });
 
-  providers.push({
-      title: 'osm bw',
-      icon: 'img/icons-osm-bw.png',
-      layer: L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
-          maxZoom: 22,
-          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      })
-  });
 
   L.control.iconLayers(providers).addTo(map);
 
@@ -194,24 +213,36 @@ function getFeaturesNearby(point, maxMeters, breakOnFirst)
 }
 
 const qualityLevels = {
+        700: "This way is a cycleway because highway='cycleway'.",
+
         501: "This way is a separated path because highway='path'.",
-        502: "This way is a separated path because highway='footway' but it is not a crossing.",
-        503: "This way is a separated path because highway='cycleway'.",
-        504: "This way is a separated path because cycleway* is defined as 'track'.",
-        505: "This way is a separated path because cycleway* is defined as 'opposite_track'.",
+
+        401: "This way is a cyclestreet because cyclestreet='yes'.",
+        402: "This way is a cyclestreet because bicycle_road='yes'.",
+
+        301: "This way is a track because cycleway* is defined as 'track'.",
+        302: "This way is a track because cycleway* is defined as 'opposite_track'.",
+
+        201: "This way has a lane because cycleway* is defined as 'lane'.",
+        202: "This way has a lane cycleway* is defined as 'opposite_lane'.",
+
+        101: "footway with cycleway",
+        102: "footway with explicit bicycle",
+        100: "highway or bicycle in tags",
+
         1: "Cycling not permitted due to bicycle='no' tag.",
-        10: "Cycling not permitted due to bicycle='use_sidepath' tag.",
         2: "Cycling not permitted due to access='no' tag.",
         3: "Cycling not permitted due to highway='motorway' tag.",
         4: "Cycling not permitted due to highway='motorway_link' tag.",
         5: "Cycling not permitted due to highway='proposed' tag.",
-        8: "Cycling not permitted due to highway='construction' tag.",
         6: "Cycling not permitted. When footway='sidewalk' is present, there must be a bicycle='yes' when the highway is 'footway'.",
         7: "Cycling not permitted. When footway='sidewalk' is present, there must be a bicycle='yes' when the highway is 'path'.",
-        101: "footway with cycleway",
-        102: "jfootway with explicit bicycle",
+        8: "Cycling not permitted due to highway='construction' tag.",
         9: "footway without explicit cycleway or bicycle",
-        100: "highway or bicycle in tags",
+        10: "Cycling not permitted due to bicycle='use_sidepath' tag.",
+        11: "Cycling not permitted due to highway='corridor' tag.",
+        12: "Cycling not permitted due to highway='platform' tag.",
+
 	0: "Way has neither a highway tag nor a bicycle=yes tag. The way is not a highway."
 }
 
