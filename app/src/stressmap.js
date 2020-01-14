@@ -37,7 +37,7 @@ const ltsSettings = [
 ]
 const settings = [
 { color: '#FF0000', weight: 4, key: 'Q0', zIndex: 1, title: '0xx - No Biking Permitted', url: 'data/' + town + '/quality_0.json' }
-,{ color: '#00FF00', weight: 4, key: 'Q1', zIndex: 2, title: '1xx - Biking on Streets or Footpaths', url: 'data/' + town + '/quality_1.json' }
+,{ color: '#00FF00', weight: 4, key: 'Q1', zIndex: 2, title: '1xx - Biking on Streets', url: 'data/' + town + '/quality_1.json' }
 ,{ color: '#FFFF00', weight: 4, key: 'Q2', zIndex: 3, title: '2xx - Biking on Marked Lanes', url: 'data/' + town + '/quality_2.json' }
 ,{ color: '#00FFFF', weight: 4, key: 'Q3', zIndex: 4, title: '3xx - Biking on Tracks', url: 'data/' + town + '/quality_3.json' }
 ,{ color: '#8080FF', weight: 4, key: 'Q4', zIndex: 5, title: '4xx - Biking in Cyclestreet', url: 'data/' + town + '/quality_4.json' }
@@ -216,6 +216,8 @@ const qualityLevels = {
         700: "This way is a cycleway because highway='cycleway'.",
 
         501: "This way is a separated path because highway='path'.",
+        502: "footway with cycleway",
+        503: "footway with explicit bicycle",
 
         401: "This way is a cyclestreet because cyclestreet='yes'.",
         402: "This way is a cyclestreet because bicycle_road='yes'.",
@@ -226,8 +228,6 @@ const qualityLevels = {
         201: "This way has a lane because cycleway* is defined as 'lane'.",
         202: "This way has a lane cycleway* is defined as 'opposite_lane'.",
 
-        101: "footway with cycleway",
-        102: "footway with explicit bicycle",
         100: "highway or bicycle in tags",
 
         1: "Cycling not permitted due to bicycle='no' tag.",

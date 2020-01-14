@@ -47,6 +47,13 @@ def separated_path(old_level, tags):
     if effective_highway(tags, 'path'):
         # 501 This way is a separated path because highway='path'.
         return 501
+    if effective_highway(tags, 'footway') or effective_highway(tags, 'steps'):
+        if tag_starts_with(tags, 'cycleway'):
+            # 502 footway with cycleway
+            return 502
+        if 'bicycle' in tags and tags['bicycle'] == 'yes':
+            # 503 footway with explicit bicycle
+            return 503
 
     return old_level # not separated
 
@@ -125,11 +132,9 @@ def biking_permitted(tags):
 
         if effective_highway(tags, 'footway') or effective_highway(tags, 'steps'):
             if tag_starts_with(tags, 'cycleway'):
-                # 101 footway with cycleway
-                return 101
+                return 100
             if 'bicycle' in tags and tags['bicycle'] == 'yes':
-                # 102 footway with explicit bicycle
-                return 102
+                return 100
             # 9 footway without explicit cycleway or bicycle
             return 9
 
@@ -252,6 +257,8 @@ if __name__ == "__main__":
             level = -1
             if 'level' in way:
                 level = way['level']
+            if level == -1:
+                continue
             if int(level / 100) == outputLevel:
                 outfile.write('{s:s}{{"type":"Feature","id":"way/{w:s}"\n'.format(
                     s=waysSeparator, w=way_id))

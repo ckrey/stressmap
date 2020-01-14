@@ -7110,14 +7110,6 @@
 ,[13.228384,52.506934]
 ,[13.228409,52.506813]
 ]}}
-,{"type":"Feature","id":"way/24540240"
-,"properties":{"id":"way/24540240"
-,"quality":201
-,"name":"Rathausstraße"
-},"geometry":{"type":"LineString","coordinates":[
-[13.408772,52.518952]
-,[13.408812,52.518972]
-]}}
 ,{"type":"Feature","id":"way/24561171"
 ,"properties":{"id":"way/24561171"
 ,"quality":201
