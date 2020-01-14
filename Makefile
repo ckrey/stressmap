@@ -9,7 +9,7 @@ all: \
 	app/data/darmstadt
 
 %.osm.json: %.osm
-	./quality-parse.py -i $<
+	./osm2json.py -i $<
 
 app/data/berlin: app/data/berlin/level_0.json app/data/berlin/quality_0.json
 app/data/hamburg: app/data/hamburg/level_0.json app/data/hamburg/quality_0.json

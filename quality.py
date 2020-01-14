@@ -7,29 +7,6 @@ import os
 import sys
 import json
 
-DEBUG_OUT = open(os.devnull, "w")
-WAYS = {}
-OSM_NODES = {}
-HIGHWAY_TYPES = {}
-LEVELS = {}
-AREAS = 0
-PLATFORMS = 0
-ELEMENT_TYPES = {}
-ACCESS_TYPES = {}
-USED_NODES = {}
-
-class OSMNode(dict):
-    """ OSMNode represents an OSM Node
-    """
-    def __init__(self, identifier, lon, lat):
-        self['identifier'] = identifier
-        self['lon'] = lon
-        self['lat'] = lat
-        #self.identifier = identifier
-        #self.lon = lon
-        #self.lat = lat
-
-
 def tag_starts_with(tags, start):
     for tag in tags:
         if tag.startswith(start):
@@ -162,6 +139,8 @@ def biking_permitted(tags):
     return 0
 
 def compute_level(tags):
+    """ compute the quality level of a highway by its tags
+    """
     _level = biking_permitted(tags)
     if _level >= 100:
         _level = cycleway(_level, tags)
@@ -170,21 +149,16 @@ def compute_level(tags):
         _level = track(_level, tags)
         _level = separated_path(_level, tags)
 
-    _count = 1
-    if _level in LEVELS:
-        _count = LEVELS[_level]
-        _count = _count + 1
-    LEVELS[_level] = _count
     return _level
 
 def usage(argv0):
     print('{} [-o <output directory>] [-i <input file>]'.format(argv0))
 
 if __name__ == "__main__":
-    IN_FILE = 'default.osm'
+    IN_FILE = 'default.osm.json'
     OUT_DIR = '.'
     try:
-        OPTS, ARGS = getopt.getopt(sys.argv[1:], "hdi:o:", ["help", "debug", "ifile=", "odir="])
+        OPTS, ARGS = getopt.getopt(sys.argv[1:], "hi:o:", ["help", "ifile=", "odir="])
     except getopt.GetoptError:
         usage(sys.argv[0])
         sys.exit(2)
@@ -192,8 +166,6 @@ if __name__ == "__main__":
         if opt in ('-h', '--help'):
             usage(sys.argv[0])
             sys.exit()
-        elif opt in ('-d', '--debug'):
-            DEBUG_OUT = sys.stderr
         elif opt in ("-o", "--odir"):
             OUT_DIR = arg
         elif opt in ("-i", "--ifile"):
@@ -203,21 +175,63 @@ if __name__ == "__main__":
             sys.exit(3)
 
     print('loading intermediates...')
-    intermediate_path = '%s' % IN_FILE
-    intermediate_infile = open(intermediate_path, "r")
-    intermediate = json.load(intermediate_infile)
-    OSM_NODES = intermediate['nodes']
-    WAYS = intermediate['ways']
-    intermediate_infile.close()
+    INTERMEDIATE_PATH = '%s' % IN_FILE
+    INTERMEDIATE_INFILE = open(INTERMEDIATE_PATH, "r")
+    INTERMEDIATE = json.load(INTERMEDIATE_INFILE)
+    OSM_NODES = INTERMEDIATE['nodes']
+    WAYS = INTERMEDIATE['ways']
+    INTERMEDIATE_INFILE.close()
 
     print('calculating levels...')
-    for way_id in WAYS:
-        way = WAYS[way_id]
-        tags = way['tags']
-        level = compute_level(tags)
-        way['level'] = level
+    HIGHWAY_TYPES = {}
+    ACCESS_TYPES = {}
+    LEVELS = {}
+    AREAS = 0
+    PLATFORMS = 0
 
+    for way_id in WAYS:
+        _way = WAYS[way_id]
+        _tags = _way['tags']
+
+        _highway = _tags['highway']
+
+        _count = 1
+        if _highway in HIGHWAY_TYPES:
+            _count = HIGHWAY_TYPES[_highway]
+            _count = _count + 1
+        HIGHWAY_TYPES[_highway] = _count
+
+        if 'access' in _tags:
+            _access = _tags['access']
+            _count = 1
+            if _access in ACCESS_TYPES:
+                _count = ACCESS_TYPES[_access]
+                _count = _count + 1
+            ACCESS_TYPES[_access] = _count
+
+        if 'area' in _tags and _tags['area'] == 'yes':
+            AREAS = AREAS + 1
+            continue
+
+        if _highway == 'platform':
+            PLATFORMS = PLATFORMS + 1
+            continue
+
+        _level = compute_level(_tags)
+
+        _count = 1
+        if _level in LEVELS:
+            _count = LEVELS[_level]
+            _count = _count + 1
+        LEVELS[_level] = _count
+
+        _way['level'] = _level
+
+    print('AREAS {}'.format(AREAS))
+    print('PLATFORMS {}'.format(PLATFORMS))
     print('LEVELS\n{}'.format(json.dumps(LEVELS, indent=4, sort_keys=True)))
+    print('HIGHWAY_TYPES\n{}'.format(json.dumps(HIGHWAY_TYPES, indent=4, sort_keys=True)))
+    print('ACCESS_TYPES\n{}'.format(json.dumps(ACCESS_TYPES, indent=4, sort_keys=True)))
 
     print('creating files...')
 
@@ -235,7 +249,7 @@ if __name__ == "__main__":
         for way_id in WAYS:
             way = WAYS[way_id]
             wayTags = way['tags']
-            level = 0
+            level = -1
             if 'level' in way:
                 level = way['level']
             if int(level / 100) == outputLevel:

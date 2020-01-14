@@ -11,22 +11,21 @@ import json
 DEBUG_OUT = open(os.devnull, "w")
 WAYS = {}
 OSM_NODES = {}
-HIGHWAY_TYPES = {}
-AREAS = 0
-PLATFORMS = 0
 ELEMENT_TYPES = {}
-ACCESS_TYPES = {}
 USED_NODES = {}
 
 class OSMNode(dict):
     """ OSMNode represents an OSM Node
     """
     def __init__(self, identifier, lon, lat):
+        super().__init__()
         self['identifier'] = identifier
         self['lon'] = lon
         self['lat'] = lat
 
 class NodeHandler(xml.sax.ContentHandler):
+    """ NodeHandler is called from the xml parser
+    """
     def __init__(self):
         super().__init__()
         self.nodeid = 0
@@ -39,7 +38,8 @@ class NodeHandler(xml.sax.ContentHandler):
 
     def startElement(self, name, attrs):
         if len(OSM_NODES) % 1000 == 1 or len(WAYS) % 100 == 1 or len(USED_NODES) % 1000 == 1:
-            sys.stderr.write('Nodes {} Ways {} using {} nodes\r'.format(len(OSM_NODES), len(WAYS), len(USED_NODES)))
+            sys.stderr.write('Nodes {} Ways {} using {} nodes\r'.format(
+                len(OSM_NODES), len(WAYS), len(USED_NODES)))
         DEBUG_OUT.write('startElement {}\n'.format(name))
         _count = 1
         if name in ELEMENT_TYPES:
@@ -78,41 +78,14 @@ class NodeHandler(xml.sax.ContentHandler):
 
         if name == 'way':
             if 'highway' in self.tags:
-                if 'area' in self.tags and self.tags['area'] == 'yes':
-                    global AREAS
-                    AREAS = AREAS + 1
-                    return
 
-                if 'access' in self.tags:
-                    _access = self.tags['access']
-                    _count = 1
-                    if _access in ACCESS_TYPES:
-                        _count = ACCESS_TYPES[_access]
-                        _count = _count + 1
-                    ACCESS_TYPES[_access] = _count
-
-                _highway = self.tags['highway']
-                if _highway == 'platform':
-                    global PLATFORMS
-                    PLATFORMS = PLATFORMS + 1
-                    return
-
-                _level = -1
                 _way = {
                     'id': self.way_id,
                     'tags': self.tags,
                     'nodes': self.way_nodes,
-                    'level': _level,
                 }
                 DEBUG_OUT.write('endElement {} {}\n'.format(name, _way))
                 WAYS[self.way_id] = _way
-
-                _count = 1
-                if _highway in HIGHWAY_TYPES:
-                    _count = HIGHWAY_TYPES[_highway]
-                    _count = _count + 1
-                HIGHWAY_TYPES[_highway] = _count
-
 
                 self.way_nodes = {}
                 self.tags = {}
@@ -125,6 +98,8 @@ class NodeHandler(xml.sax.ContentHandler):
             self.tags = {}
 
 def usage(argv0):
+    """ usage prints usage info for the command line user
+    """
     print('{} [-i <input file>]'.format(argv0))
 
 if __name__ == "__main__":
@@ -155,19 +130,16 @@ if __name__ == "__main__":
     PARSER.setContentHandler(HANDLER)
     PARSER.parse(IN_FILE)
 
-    print('finished parsing {} nodes and {} ways using {} nodes!'.format(len(OSM_NODES), len(WAYS), len(USED_NODES)))
+    print('finished parsing {} nodes and {} ways using {} nodes!'.format(
+        len(OSM_NODES), len(WAYS), len(USED_NODES)))
 
     print('ELEMENT_TYPES {}'.format(ELEMENT_TYPES))
-    print('HIGHWAY_TYPES {}'.format(HIGHWAY_TYPES))
-    print('ACCESS_TYPES {}'.format(ACCESS_TYPES))
-    print('AREAS {}'.format(AREAS))
-    print('PLATFORMS {}'.format(PLATFORMS))
 
     print('saving intermediates...')
-    intermediate = {'nodes': OSM_NODES, 'ways': WAYS}
-    intermediate_path = '%s.json' % IN_FILE
-    intermediate_outfile = open(intermediate_path, "w")
-    json.dump(intermediate, intermediate_outfile)
-    intermediate_outfile.close()
+    INTERMEDIATE = {'nodes': OSM_NODES, 'ways': WAYS}
+    INTERMEDIATE_PATH = '%s.json' % IN_FILE
+    INTERMEDIATE_OUTFILE = open(INTERMEDIATE_PATH, "w")
+    json.dump(INTERMEDIATE, INTERMEDIATE_OUTFILE)
+    INTERMEDIATE_OUTFILE.close()
 
     print('finished!')
