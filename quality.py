@@ -100,6 +100,8 @@ def biking_permitted(tags):
         print('!!!no highway, but bicycle', tags)
 
     if 'highway' in tags or 'bicycle' in tags:
+        if effective_highway(tags, 'trunk-link'):
+            print('tags', tags)
         if 'bicycle' in tags and tags['bicycle'] == 'no':
             # 1 Cycling not permitted due to bicycle='no' tag.
             return 1
@@ -163,13 +165,9 @@ def compute_level(tags):
     _level = biking_permitted(tags)
     if _level >= 100:
         _level = cycleway(_level, tags)
-    if _level < 200:
         _level = cyclestreet(_level, tags)
-    if _level < 200:
         _level = lane(_level, tags)
-    if _level < 200:
         _level = track(_level, tags)
-    if _level < 200:
         _level = separated_path(_level, tags)
 
     _count = 1
@@ -218,6 +216,8 @@ if __name__ == "__main__":
         tags = way['tags']
         level = compute_level(tags)
         way['level'] = level
+
+    print('LEVELS\n{}'.format(json.dumps(LEVELS, indent=4, sort_keys=True)))
 
     print('creating files...')
 

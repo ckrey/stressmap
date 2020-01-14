@@ -9182,14 +9182,6 @@
 [9.933995,53.583189]
 ,[9.934142,53.583153]
 ]}}
-,{"type":"Feature","id":"way/717669970"
-,"properties":{"id":"way/717669970"
-,"quality":700
-,"name":"Chemnitzstraße"
-},"geometry":{"type":"LineString","coordinates":[
-[9.947091,53.555589]
-,[9.947142,53.555593]
-]}}
 ,{"type":"Feature","id":"way/717716188"
 ,"properties":{"id":"way/717716188"
 ,"quality":700

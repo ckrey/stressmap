@@ -125,13 +125,6 @@
 ,[8.644704,49.910516]
 ,[8.644122,49.910552]
 ]}}
-,{"type":"Feature","id":"way/62567373"
-,"properties":{"id":"way/62567373"
-,"quality":304
-},"geometry":{"type":"LineString","coordinates":[
-[8.662304,49.890384]
-,[8.662342,49.890428]
-]}}
 ,{"type":"Feature","id":"way/64326520"
 ,"properties":{"id":"way/64326520"
 ,"quality":304
@@ -293,13 +286,6 @@
 },"geometry":{"type":"LineString","coordinates":[
 [8.662107,49.907960]
 ,[8.661564,49.907833]
-]}}
-,{"type":"Feature","id":"way/483873465"
-,"properties":{"id":"way/483873465"
-,"quality":304
-},"geometry":{"type":"LineString","coordinates":[
-[8.662223,49.907991]
-,[8.662107,49.907960]
 ]}}
 ,{"type":"Feature","id":"way/700236090"
 ,"properties":{"id":"way/700236090"

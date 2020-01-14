@@ -12,7 +12,6 @@ DEBUG_OUT = open(os.devnull, "w")
 WAYS = {}
 OSM_NODES = {}
 HIGHWAY_TYPES = {}
-LEVELS = {}
 AREAS = 0
 PLATFORMS = 0
 ELEMENT_TYPES = {}
@@ -163,7 +162,6 @@ if __name__ == "__main__":
     print('ACCESS_TYPES {}'.format(ACCESS_TYPES))
     print('AREAS {}'.format(AREAS))
     print('PLATFORMS {}'.format(PLATFORMS))
-    print('LEVELS {}'.format(LEVELS))
 
     print('saving intermediates...')
     intermediate = {'nodes': OSM_NODES, 'ways': WAYS}
