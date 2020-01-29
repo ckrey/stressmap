@@ -1,0 +1,2 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"way/129114173","properties":{"id":"way/129114173","name":"Batteriestraße"},"geometry":{"type":"LineString","coordinates":[[6.6927712,51.2017647],[6.692476,51.2020101]]}},
+{"type":"Feature","id":"way/425204423","properties":{"id":"way/425204423","name":"Danziger Straße"},"geometry":{"type":"LineString","coordinates":[[6.7041743,51.2019905],[6.7041992,51.2018071],[6.7042349,51.2016641],[6.7042649,51.201591]]}}]}

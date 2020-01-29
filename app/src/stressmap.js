@@ -6,12 +6,14 @@ var map;
 
 if (town == 'neuss') {
 	map = L.map('mapid').setView([51.1762, 6.7066], 12)
-} else if (town == 'neuss-small-overpass') {
+} else if (town == 'neuss-small') {
 	map = L.map('mapid').setView([51.2, 6.69], 13)
 } else if (town == 'darmstadt') {
 	map = L.map('mapid').setView([49.8730, 8.60], 11)
 } else if (town == 'duesseldorf') {
 	map = L.map('mapid').setView([51.4831, 6.6028], 9)
+} else if (town == 'duesseldorf-small') {
+	map = L.map('mapid').setView([51.23, 6.8], 13)
 } else if (town == 'koeln') {
 	map = L.map('mapid').setView([50.9976, 6.8409], 9)
 } else if (town == 'hamburg') {

@@ -1,6 +1,8 @@
+# stressmap
 all: \
 	app/data/neuss \
-	app/data/neuss-small-overpass \
+	app/data/neuss-small \
+	app/data/duesseldorf-small \
 	app/data/berlin \
 	app/data/hamburg \
 	app/data/duesseldorf \
@@ -18,7 +20,8 @@ app/data/koeln: app/data/koeln/level_0.json app/data/koeln/quality_0.json
 app/data/karlsruhe: app/data/karlsruhe/level_0.json app/data/karlsruhe/quality_0.json
 app/data/darmstadt: app/data/darmstadt/level_0.json app/data/darmstadt/quality_0.json
 app/data/neuss: app/data/neuss/level_0.json app/data/neuss/quality_0.json
-app/data/neuss-small-overpass: app/data/neuss-small-overpass/level_0.json app/data/neuss-small-overpass/quality_0.json
+app/data/neuss-small: app/data/neuss-small/level_0.json app/data/neuss-small/quality_0.json
+app/data/duesseldorf-small: app/data/duesseldorf-small/level_0.json app/data/duesseldorf-small/quality_0.json
 
 app/data/duesseldorf/level_0.json: osmfiles/duesseldorf-regbez-latest.osm 
 	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
@@ -62,23 +65,33 @@ app/data/neuss/quality_0.json: osmfiles/neuss.osm.json
 app/data/neuss/level_0.json: osmfiles/neuss.osm 
 	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
-app/data/neuss-small-overpass/level_0.json: osmfiles/neuss-small-overpass.osm 
+app/data/neuss-small/level_0.json: osmfiles/neuss-small.osm 
 	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
-app/data/neuss-small-overpass/quality_0.json: osmfiles/neuss-small-overpass.osm.json
+app/data/duesseldorf-small/level_0.json: osmfiles/duesseldorf-small.osm 
+	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+
+app/data/neuss-small/quality_0.json: osmfiles/neuss-small.osm.json
+	./quality.py -i $< -o $(@D)
+
+app/data/duesseldorf-small/quality_0.json: osmfiles/duesseldorf-small.osm.json
 	./quality.py -i $< -o $(@D)
 
 
 overpass: \
 	osmfiles/neuss.osm \
-	osmfiles/neuss-small-overpass.osm \
-	osmfiles/darmstadt-overpass.osm
+	osmfiles/neuss-small.osm \
+	osmfiles/duesseldorf-small.osm \
+	osmfiles/darmstadt.osm
 
 osmfiles/neuss.osm:
 	curl -o $@ https://overpass-api.de/api/map?bbox=6.6086,51.1425,6.7844,51.2533
 
-osmfiles/neuss-small-overpass.osm:
+osmfiles/neuss-small.osm:
 	curl -o $@ https://overpass-api.de/api/map?bbox=6.6752,51.1902,6.7078,51.2076
+
+osmfiles/duesseldorf-small.osm:
+	curl -o $@ https://overpass-api.de/api/map?bbox=6.7274,51.1956,6.8141,51.2548
 
 osmfiles/darmstadt.osm:
 	curl -o $@ https://overpass-api.de/api/map?bbox=8.5638,49.8219,8.7396,49.9359

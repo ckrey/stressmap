@@ -1,7 +1,7 @@
 {"type":"FeatureCollection","features":[
 {"type":"Feature","id":"way/4209741"
 ,"properties":{"id":"way/4209741"
-,"quality":304
+,"quality":301
 ,"name":"Landgraf-Georg-Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [8.663399,49.872925]
@@ -14,14 +14,14 @@
 ]}}
 ,{"type":"Feature","id":"way/24184444"
 ,"properties":{"id":"way/24184444"
-,"quality":304
+,"quality":301
 },"geometry":{"type":"LineString","coordinates":[
 [8.643627,49.916033]
 ,[8.644988,49.915989]
 ]}}
 ,{"type":"Feature","id":"way/28202319"
 ,"properties":{"id":"way/28202319"
-,"quality":304
+,"quality":301
 ,"name":"Glockengartenweg"
 },"geometry":{"type":"LineString","coordinates":[
 [8.651034,49.918467]
@@ -32,7 +32,7 @@
 ]}}
 ,{"type":"Feature","id":"way/51873805"
 ,"properties":{"id":"way/51873805"
-,"quality":304
+,"quality":301
 ,"name":"Pützerstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [8.661674,49.876330]
@@ -49,7 +49,7 @@
 ]}}
 ,{"type":"Feature","id":"way/150062785"
 ,"properties":{"id":"way/150062785"
-,"quality":304
+,"quality":301
 },"geometry":{"type":"LineString","coordinates":[
 [8.665667,49.898084]
 ,[8.665687,49.898135]
@@ -58,7 +58,7 @@
 ]}}
 ,{"type":"Feature","id":"way/185082569"
 ,"properties":{"id":"way/185082569"
-,"quality":304
+,"quality":301
 ,"name":"Rheinstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [8.635389,49.870569]
@@ -70,7 +70,7 @@
 ]}}
 ,{"type":"Feature","id":"way/378479743"
 ,"properties":{"id":"way/378479743"
-,"quality":304
+,"quality":301
 ,"name":"Landgraf-Georg-Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [8.660528,49.873039]
@@ -87,14 +87,14 @@
 ]}}
 ,{"type":"Feature","id":"way/483873462"
 ,"properties":{"id":"way/483873462"
-,"quality":304
+,"quality":301
 },"geometry":{"type":"LineString","coordinates":[
 [8.662107,49.907960]
 ,[8.661564,49.907833]
 ]}}
 ,{"type":"Feature","id":"way/700236090"
 ,"properties":{"id":"way/700236090"
-,"quality":304
+,"quality":301
 ,"name":"Landgraf-Georg-Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [8.656780,49.873243]
@@ -102,7 +102,7 @@
 ]}}
 ,{"type":"Feature","id":"way/700236092"
 ,"properties":{"id":"way/700236092"
-,"quality":304
+,"quality":301
 ,"name":"Landgraf-Georg-Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [8.657241,49.873185]
@@ -113,7 +113,7 @@
 ]}}
 ,{"type":"Feature","id":"way/700236093"
 ,"properties":{"id":"way/700236093"
-,"quality":304
+,"quality":301
 ,"name":"Landgraf-Georg-Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [8.656746,49.873250]
@@ -125,7 +125,7 @@
 ]}}
 ,{"type":"Feature","id":"way/700440132"
 ,"properties":{"id":"way/700440132"
-,"quality":304
+,"quality":301
 ,"name":"Landgraf-Georg-Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [8.660782,49.873066]
@@ -133,7 +133,7 @@
 ]}}
 ,{"type":"Feature","id":"way/700440134"
 ,"properties":{"id":"way/700440134"
-,"quality":304
+,"quality":301
 ,"name":"Landgraf-Georg-Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [8.663867,49.872913]
@@ -141,7 +141,7 @@
 ]}}
 ,{"type":"Feature","id":"way/700440139"
 ,"properties":{"id":"way/700440139"
-,"quality":304
+,"quality":301
 ,"name":"Landgraf-Georg-Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [8.656926,49.873040]
@@ -151,7 +151,7 @@
 ]}}
 ,{"type":"Feature","id":"way/700440148"
 ,"properties":{"id":"way/700440148"
-,"quality":304
+,"quality":301
 ,"name":"Landgraf-Georg-Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [8.661198,49.873060]
@@ -159,7 +159,7 @@
 ]}}
 ,{"type":"Feature","id":"way/715913363"
 ,"properties":{"id":"way/715913363"
-,"quality":304
+,"quality":301
 ,"name":"Landgraf-Georg-Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [8.662505,49.872959]

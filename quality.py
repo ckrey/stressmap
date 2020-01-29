@@ -60,11 +60,11 @@ def separated_path(old_level, tags):
 def track(old_level, tags):
     if tag_starts_with_value(tags, 'cycleway', 'track'):
         # 301 This way is a separated path because cycleway* is defined as 'track'.
-        return 304
+        return 301
 
     if tag_starts_with_value(tags, 'cycleway', 'opposite_track'):
         # 302 This way is a separated path because cycleway* is defined as 'opposite_track'.
-        return 305
+        return 302
 
     return old_level # not separated
 
