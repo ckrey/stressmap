@@ -31,23 +31,26 @@ if (town == 'neuss') {
 
 const ltsSettings = [
 
-{ color: '#FF7777', weight: 2, key: 'LTS0', zIndex: 11, title: 'LTS 0 - Biking not permitted', url: 'data/' + town + '/level_0.json' },
-{ color: '#0099cc', weight: 2, key: 'LTS1', zIndex: 12, title: 'LTS 1 - Suitable for Children', url: 'data/' + town + '/level_1.json' },
-{ color: '#1C7C54', weight: 2, key: 'LTS2', zIndex: 13, title: 'LTS 2 - Low Stress', url: 'data/' + town + '/level_2.json' },
-{ color: '#F0C808', weight: 2, key: 'LTS3', zIndex: 14, title: 'LTS 3 - Moderate Stress', url: 'data/' + town + '/level_3.json' },
-{ color: '#DD5454', weight: 2, key: 'LTS4', zIndex: 15, title: 'LTS 4 - High Stress', url: 'data/' + town + '/level_4.json' }
+{ color: '#FF7777', weight: 1, key: 'LTS0', zIndex: 11, title: 'LTS 0 - Biking not permitted', url: 'data/' + town + '/level_0.json' },
+{ color: '#0099cc', weight: 1, key: 'LTS1', zIndex: 12, title: 'LTS 1 - Suitable for Children', url: 'data/' + town + '/level_1.json' },
+{ color: '#1C7C54', weight: 1, key: 'LTS2', zIndex: 13, title: 'LTS 2 - Low Stress', url: 'data/' + town + '/level_2.json' },
+{ color: '#F0C808', weight: 1, key: 'LTS3', zIndex: 14, title: 'LTS 3 - Moderate Stress', url: 'data/' + town + '/level_3.json' },
+{ color: '#DD5454', weight: 1, key: 'LTS4', zIndex: 15, title: 'LTS 4 - High Stress', url: 'data/' + town + '/level_4.json' }
 ]
 const settings = [
-{ color: '#FF0000', weight: 4, key: 'Q0', zIndex: 1, title: '0xx - No Biking Permitted', url: 'data/' + town + '/quality_0.json' }
-,{ color: '#00FF00', weight: 4, key: 'Q1', zIndex: 2, title: '1xx - Biking on Streets', url: 'data/' + town + '/quality_1.json' }
-,{ color: '#FFFF00', weight: 4, key: 'Q2', zIndex: 3, title: '2xx - Biking on Marked Lanes', url: 'data/' + town + '/quality_2.json' }
-,{ color: '#00FFFF', weight: 4, key: 'Q3', zIndex: 4, title: '3xx - Biking on Tracks', url: 'data/' + town + '/quality_3.json' }
-,{ color: '#8080FF', weight: 4, key: 'Q4', zIndex: 5, title: '4xx - Biking in Cyclestreet', url: 'data/' + town + '/quality_4.json' }
-,{ color: '#0000FF', weight: 4, key: 'Q5', zIndex: 6, title: '5xx - Biking on Separated Infrastructure', url: 'data/' + town + '/quality_5.json' }
-//,{ color: '#3333CC', weight: 4, key: 'Q6', zIndex: 7, title: '6xx - Biking very good', url: 'data/' + town + '/quality_6.json' }
-,{ color: '#FF00FF', weight: 4, key: 'Q7', zIndex: 8, title: '7xx - Biking on Cycleway', url: 'data/' + town + '/quality_7.json' }
-//,{ color: '#66AADD', weight: 4, key: 'Q8', zIndex: 9, title: '8xx - Biking optimal on Earth', url: 'data/' + town + '/quality_8.json' }
-//,{ color: '#88CCFF', weight: 4, key: 'Q9', zIndex: 10, title: '9xx - Biking in Heaven', url: 'data/' + town + '/quality_9.json' }
+{ color: '#FF0000', weight: 3, key: 'Q0', zIndex: 1, title: '0xx - No Biking Permitted', url: 'data/' + town + '/quality_0.json' }
+,{ color: '#00FF00', weight: 3, key: 'Q1', zIndex: 2, title: '1xx - Biking on Streets', url: 'data/' + town + '/quality_1.json' }
+,{ color: '#FFFF00', weight: 3, key: 'Q2', zIndex: 3, title: '2xx - Biking on Marked Lanes', url: 'data/' + town + '/quality_2.json' }
+,{ color: '#00FFFF', weight: 3, key: 'Q3', zIndex: 4, title: '3xx - Biking on Tracks', url: 'data/' + town + '/quality_3.json' }
+,{ color: '#8080FF', weight: 3, key: 'Q4', zIndex: 5, title: '4xx - Biking in Cyclestreet', url: 'data/' + town + '/quality_4.json' }
+,{ color: '#0000FF', weight: 3, key: 'Q5', zIndex: 6, title: '5xx - Biking on Separated Infrastructure', url: 'data/' + town + '/quality_5.json' }
+//,{ color: '#3333CC', weight: 3, key: 'Q6', zIndex: 7, title: '6xx - Biking very good', url: 'data/' + town + '/quality_6.json' }
+,{ color: '#FF00FF', weight: 3, key: 'Q7', zIndex: 8, title: '7xx - Biking on Cycleway', url: 'data/' + town + '/quality_7.json' }
+//,{ color: '#66AADD', weight: 3, key: 'Q8', zIndex: 9, title: '8xx - Biking optimal on Earth', url: 'data/' + town + '/quality_8.json' }
+//,{ color: '#88CCFF', weight: 3, key: 'Q9', zIndex: 10, title: '9xx - Biking in Heaven', url: 'data/' + town + '/quality_9.json' }
+]
+const extraSettings = [
+{ color: '#404040', weight: 5, key: 'NRW', zIndex: 21, title: 'NRW Radverkehrsnetz (http://www.radverkehrsnetz.nrw.de)', url: 'data/' + town + '/NRWRadverkehrsnetz.json' }
 ]
 const homePage = 'https://ckrey.github.io/stressmap/'
 const legendTitle = 'Bicycle Infrastructure Quality Map'
@@ -74,6 +77,11 @@ function addLegend () {
     for (let setting of settings) {
       legendHtml += addLegendLine(setting)
     }
+    if (town == 'duesseldorf') {
+      for (let setting of extraSettings) {
+        legendHtml += addLegendLine(setting)
+      }
+    }
     legendHtml += '</table>'
     div.innerHTML = legendHtml
     div.addEventListener('mouseover', function () {map.doubleClickZoom.disable(); });
@@ -91,6 +99,11 @@ function addStressLayers () {
   }
   for (let setting of settings) {
     addStressLayerToMap(setting)
+  }
+  if (town == 'duesseldorf') {
+    for (let setting of extraSettings) {
+        addStressLayerToMap(setting)
+    }
   }
 }
 
