@@ -8,10 +8,18 @@ all: \
 	app/data/duesseldorf \
 	app/data/koeln \
 	app/data/karlsruhe \
-	app/data/darmstadt
+	app/data/darmstadt \
+	osm2json
 
-%.osm.json: %.osm
-	./osm2json.py -i $<
+osm2json: osm2json.c
+	cc -o $@ $< `xml2-config --cflags --libs`
+
+clean:
+	rm osm2json
+
+%.osm.json: %.osm osm2json
+	./osm2json -i $<
+	# ./osm2json.py -i $<
 
 app/data/berlin: app/data/berlin/level_0.json app/data/berlin/quality_0.json
 app/data/hamburg: app/data/hamburg/level_0.json app/data/hamburg/quality_0.json
