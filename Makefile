@@ -2,10 +2,10 @@
 all: \
 	app/data/neuss \
 	app/data/neuss-small \
-	app/data/duesseldorf-small \
 	app/data/berlin \
 	app/data/hamburg \
 	app/data/duesseldorf \
+	app/data/duesseldorf-small \
 	app/data/koeln \
 	app/data/karlsruhe \
 	app/data/darmstadt \
@@ -24,17 +24,17 @@ clean:
 app/data/berlin: app/data/berlin/level_0.json app/data/berlin/quality_0.json
 app/data/hamburg: app/data/hamburg/level_0.json app/data/hamburg/quality_0.json
 app/data/duesseldorf: app/data/duesseldorf/level_0.json app/data/duesseldorf/quality_0.json
+app/data/duesseldorf-small: app/data/duesseldorf-small/level_0.json app/data/duesseldorf-small/quality_0.json
 app/data/koeln: app/data/koeln/level_0.json app/data/koeln/quality_0.json
 app/data/karlsruhe: app/data/karlsruhe/level_0.json app/data/karlsruhe/quality_0.json
 app/data/darmstadt: app/data/darmstadt/level_0.json app/data/darmstadt/quality_0.json
 app/data/neuss: app/data/neuss/level_0.json app/data/neuss/quality_0.json
 app/data/neuss-small: app/data/neuss-small/level_0.json app/data/neuss-small/quality_0.json
-app/data/duesseldorf-small: app/data/duesseldorf-small/level_0.json app/data/duesseldorf-small/quality_0.json
 
-app/data/duesseldorf/level_0.json: osmfiles/duesseldorf-regbez-latest.osm 
+app/data/duesseldorf/level_0.json: osmfiles/duesseldorf.osm 
 	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
-app/data/duesseldorf/quality_0.json: osmfiles/duesseldorf-regbez-latest.osm.json
+app/data/duesseldorf/quality_0.json: osmfiles/duesseldorf.osm.json
 	./quality.py -i $< -o $(@D)
 
 app/data/koeln/level_0.json: osmfiles/koeln-regbez-latest.osm 
@@ -98,6 +98,9 @@ osmfiles/neuss.osm:
 osmfiles/neuss-small.osm:
 	curl -o $@ https://overpass-api.de/api/map?bbox=6.6752,51.1902,6.7078,51.2076
 
+osmfiles/duesseldorf.osm:
+	curl -o $@ https://overpass-api.de/api/map?bbox=6.6859,51.1236,6.9406,51.3536
+
 osmfiles/duesseldorf-small.osm:
 	curl -o $@ https://overpass-api.de/api/map?bbox=6.7274,51.1956,6.8141,51.2548
 
@@ -105,7 +108,6 @@ osmfiles/darmstadt.osm:
 	curl -o $@ https://overpass-api.de/api/map?bbox=8.5638,49.8219,8.7396,49.9359
 	
 geofabrik: \
-	osmfiles/duesseldorf-regbez-latest.osm.bz2 \
 	osmfiles/koeln-regbez-latest.osm.bz2 \
 	osmfiles/karlsruhe-regbez-latest.osm.bz2 \
 	osmfiles/berlin-latest.osm.bz2 \
@@ -119,9 +121,6 @@ osmfiles/berlin-latest.osm.bz2:
 
 osmfiles/hamburg-latest.osm.bz2:
 	curl -z $@ -o $@ https://download.geofabrik.de/europe/germany/hamburg-latest.osm.bz2
-
-osmfiles/duesseldorf-regbez-latest.osm.bz2:
-	curl -z $@ -o $@ https://download.geofabrik.de/europe/germany/nordrhein-westfalen/duesseldorf-regbez-latest.osm.bz2
 
 osmfiles/koeln-regbez-latest.osm.bz2:
 	curl -z $@ -o $@ https://download.geofabrik.de/europe/germany/nordrhein-westfalen/koeln-regbez-latest.osm.bz2

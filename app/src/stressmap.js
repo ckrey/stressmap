@@ -11,7 +11,7 @@ if (town == 'neuss') {
 } else if (town == 'darmstadt') {
 	map = L.map('mapid').setView([49.8730, 8.60], 11)
 } else if (town == 'duesseldorf') {
-	map = L.map('mapid').setView([51.4831, 6.6028], 9)
+	map = L.map('mapid').setView([51.23, 6.8], 12)
 } else if (town == 'duesseldorf-small') {
 	map = L.map('mapid').setView([51.23, 6.8], 13)
 } else if (town == 'koeln') {
