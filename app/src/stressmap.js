@@ -2,6 +2,7 @@ var urlParams = new URLSearchParams(window.location.search);
 
 var town = urlParams.get('town');
 var lts = urlParams.get('lts');
+var dus = urlParams.get('dus');
 var map;
 
 if (town == 'neuss') {
@@ -49,8 +50,9 @@ const settings = [
 //,{ color: '#66AADD', weight: 3, key: 'Q8', zIndex: 9, title: '8xx - Biking optimal on Earth', url: 'data/' + town + '/quality_8.json' }
 //,{ color: '#88CCFF', weight: 3, key: 'Q9', zIndex: 10, title: '9xx - Biking in Heaven', url: 'data/' + town + '/quality_9.json' }
 ]
-const extraSettings = [
+const dusSettings = [
 { color: '#404040', weight: 5, key: 'NRW', zIndex: 21, title: 'NRW Radverkehrsnetz (http://www.radverkehrsnetz.nrw.de)', url: 'data/' + town + '/NRWRadverkehrsnetz.json' }
+,{ color: '#806040', weight: 5, key: 'DUS', zIndex: 21, title: 'Basisradwegenetz Duesseldorf (https://www.duesseldorf.de/radschlag/radhauptnetz/)', url: 'data/' + town + '/basisradwegenetzduesseldorf.geojson' }
 ]
 const homePage = 'https://ckrey.github.io/stressmap/'
 const legendTitle = 'Bicycle Infrastructure Quality Map'
@@ -77,8 +79,8 @@ function addLegend () {
     for (let setting of settings) {
       legendHtml += addLegendLine(setting)
     }
-    if (town == 'duesseldorf') {
-      for (let setting of extraSettings) {
+    if (dus == 'yes') {
+      for (let setting of dusSettings) {
         legendHtml += addLegendLine(setting)
       }
     }
@@ -100,8 +102,8 @@ function addStressLayers () {
   for (let setting of settings) {
     addStressLayerToMap(setting)
   }
-  if (town == 'duesseldorf') {
-    for (let setting of extraSettings) {
+  if (dus == 'yes') {
+    for (let setting of dusSettings) {
         addStressLayerToMap(setting)
     }
   }
