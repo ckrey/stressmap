@@ -43,6 +43,29 @@ def cyclestreet(old_level, tags):
 
     return old_level # no cyclestreet
 
+def bicycle_positive(tags):
+    if 'bicycle' in tags:
+        _bicycle = tags['bicycle']
+        if _bicycle == 'yes':
+            return True
+        if _bicycle == 'designated':
+            return True
+        if _bicycle == 'destination':
+            return True
+        if _bicycle == 'permissive':
+            return True
+        if _bicycle == 'dismount':
+            return True
+        if _bicycle == 'official':
+            return True
+        if _bicycle == 'use_sidepath':
+            return 
+        if _bicycle == 'no':
+            return False
+        return False
+    else:
+        return False
+
 def separated_path(old_level, tags):
     if effective_highway(tags, 'path'):
         # 501 This way is a separated path because highway='path'.
@@ -51,7 +74,7 @@ def separated_path(old_level, tags):
         if tag_starts_with(tags, 'cycleway'):
             # 502 footway with cycleway
             return 502
-        if 'bicycle' in tags and tags['bicycle'] == 'yes':
+        if bicycle_positive(tags):
             # 503 footway with explicit bicycle
             return 503
 
@@ -118,29 +141,29 @@ def biking_permitted(tags):
             return 12
 
         if 'footway' in tags and tags['footway'] == 'sidewalk':
-            if 'bicycle' in tags and tags['bicycle'] == 'yes':
+            if bicycle_positive(tags):
                 return 100
             if effective_highway(tags, 'footway'):
                 # 6 Cycling not permitted. When footway='sidewalk' is present,
-                # 6 there must be a bicycle='yes' when the highway is 'footway'.
+                # 6 there must be a bicycle=[yes, official, ...]  when the highway is 'footway'.
                 return 6
             if effective_highway(tags, 'path'):
                 # 7 Cycling not permitted. When footway='sidewalk' is present,
-                # 7 there must be a bicycle='yes' when the highway is 'path'.
+                # 7 there must be a bicycle=[yes, official, ...] when the highway is 'path'.
                 return 7
             return 100
 
         if effective_highway(tags, 'footway') or effective_highway(tags, 'steps'):
             if tag_starts_with(tags, 'cycleway'):
                 return 100
-            if 'bicycle' in tags and tags['bicycle'] == 'yes':
+            if bicycle_positive(tags):
                 return 100
             # 9 footway without explicit cycleway or bicycle
             return 9
 
         # 100 highway or bicycle in tags
         return 100
-    # 0 Way has neither a highway tag nor a bicycle=yes tag. The way is not a highway.
+    # 0 Way has neither a highway tag nor a bicycle=[yes, official, ...] tag. The way is not a highway.
     return 0
 
 def compute_level(tags):
@@ -190,6 +213,7 @@ if __name__ == "__main__":
     print('calculating levels...')
     HIGHWAY_TYPES = {}
     ACCESS_TYPES = {}
+    BICYCLE_TYPES = {}
     LEVELS = {}
     AREAS = 0
     PLATFORMS = 0
@@ -214,6 +238,14 @@ if __name__ == "__main__":
                 _count = _count + 1
             ACCESS_TYPES[_access] = _count
 
+        if 'bicycle' in _tags:
+            _bicycle = _tags['bicycle']
+            _count = 1
+            if _bicycle in BICYCLE_TYPES:
+                _count = BICYCLE_TYPES[_bicycle]
+                _count = _count + 1
+            BICYCLE_TYPES[_bicycle] = _count
+
         if 'area' in _tags and _tags['area'] == 'yes':
             AREAS = AREAS + 1
             continue
@@ -237,6 +269,7 @@ if __name__ == "__main__":
     print('LEVELS\n{}'.format(json.dumps(LEVELS, indent=4, sort_keys=True)))
     print('HIGHWAY_TYPES\n{}'.format(json.dumps(HIGHWAY_TYPES, indent=4, sort_keys=True)))
     print('ACCESS_TYPES\n{}'.format(json.dumps(ACCESS_TYPES, indent=4, sort_keys=True)))
+    print('BICYCLE_TYPES\n{}'.format(json.dumps(BICYCLE_TYPES, indent=4, sort_keys=True)))
 
     print('creating files...')
 

@@ -213,6 +213,7 @@
 ,{"type":"Feature","id":"way/5624699"
 ,"properties":{"id":"way/5624699"
 ,"quality":301
+,"name":"Berghäuschensweg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.720126,51.175182]
 ,[6.720304,51.175055]
@@ -343,6 +344,7 @@
 ,{"type":"Feature","id":"way/11970108"
 ,"properties":{"id":"way/11970108"
 ,"quality":301
+,"name":"Berghäuschensweg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.720928,51.173351]
 ,[6.720963,51.173198]
@@ -2384,6 +2386,7 @@
 ,{"type":"Feature","id":"way/43379326"
 ,"properties":{"id":"way/43379326"
 ,"quality":301
+,"name":"Berghäuschensweg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.721734,51.171003]
 ,[6.722021,51.170601]
@@ -9327,6 +9330,7 @@
 ,{"type":"Feature","id":"way/427763737"
 ,"properties":{"id":"way/427763737"
 ,"quality":301
+,"name":"Berghäuschensweg"
 },"geometry":{"type":"LineString","coordinates":[
 [6.718984,51.175880]
 ,[6.719077,51.175812]
@@ -9443,6 +9447,7 @@
 ,"name":"Düsseldorfer Straße"
 },"geometry":{"type":"LineString","coordinates":[
 [6.691859,51.212662]
+,[6.692297,51.213172]
 ,[6.692782,51.213732]
 ]}}
 ,{"type":"Feature","id":"way/427789247"
