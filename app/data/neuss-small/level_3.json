@@ -60,7 +60,7 @@
 {"type":"Feature","id":"way/28339277","properties":{"id":"way/28339277","name":"Salzstraße"},"geometry":{"type":"LineString","coordinates":[[6.6856049,51.2052461],[6.6858159,51.2051575]]}},
 {"type":"Feature","id":"way/28339278","properties":{"id":"way/28339278","name":"Salzstraße"},"geometry":{"type":"LineString","coordinates":[[6.6859031,51.2051204],[6.6863872,51.204912]]}},
 {"type":"Feature","id":"way/28443463","properties":{"id":"way/28443463"},"geometry":{"type":"LineString","coordinates":[[6.6912724,51.200603],[6.6910403,51.2005534]]}},
-{"type":"Feature","id":"way/28584920","properties":{"id":"way/28584920","name":"Wierstraetweg"},"geometry":{"type":"LineString","coordinates":[[6.6895027,51.197156],[6.6898762,51.1969678]]}},
+{"type":"Feature","id":"way/28584920","properties":{"id":"way/28584920","name":"Wierstraetweg"},"geometry":{"type":"LineString","coordinates":[[6.6895027,51.197156],[6.6898639,51.1969639]]}},
 {"type":"Feature","id":"way/28807053","properties":{"id":"way/28807053","name":"Theodor-Heuss-Platz"},"geometry":{"type":"LineString","coordinates":[[6.6857623,51.2038277],[6.6857738,51.2038842],[6.6858237,51.2039226],[6.6858272,51.2039627],[6.6858259,51.2039782],[6.6858039,51.2039992],[6.6857168,51.2040182]]}},
 {"type":"Feature","id":"way/28947159","properties":{"id":"way/28947159","name":"Zollstraße"},"geometry":{"type":"LineString","coordinates":[[6.6933374,51.1956514],[6.6934143,51.1957334]]}},
 {"type":"Feature","id":"way/28947160","properties":{"id":"way/28947160","name":"Zollstraße"},"geometry":{"type":"LineString","coordinates":[[6.6934143,51.1957334],[6.6934395,51.1957595],[6.6936173,51.1959425]]}},
@@ -390,4 +390,9 @@
 {"type":"Feature","id":"way/763947502","properties":{"id":"way/763947502"},"geometry":{"type":"LineString","coordinates":[[6.7025272,51.1903373],[6.7024994,51.1902566],[6.7021895,51.1896035],[6.7021073,51.189425]]}},
 {"type":"Feature","id":"way/764116365","properties":{"id":"way/764116365","name":"Am Obertor"},"geometry":{"type":"LineString","coordinates":[[6.6994572,51.193811],[6.6993386,51.1938885]]}},
 {"type":"Feature","id":"way/767504286","properties":{"id":"way/767504286"},"geometry":{"type":"LineString","coordinates":[[6.7018978,51.204506],[6.7019816,51.2045414],[6.702113,51.204627],[6.7024705,51.2047859],[6.702522,51.2048204],[6.7025692,51.2048501],[6.7027333,51.2049078],[6.7031998,51.2051062],[6.7033996,51.205177],[6.7035139,51.2051861],[6.7039397,51.2048818]]}},
-{"type":"Feature","id":"way/767765226","properties":{"id":"way/767765226"},"geometry":{"type":"LineString","coordinates":[[6.6976667,51.199829],[6.6978647,51.19988],[6.6982657,51.1999847]]}}]}
+{"type":"Feature","id":"way/767765226","properties":{"id":"way/767765226"},"geometry":{"type":"LineString","coordinates":[[6.6976667,51.199829],[6.6978647,51.19988],[6.6982657,51.1999847]]}},
+{"type":"Feature","id":"way/770009099","properties":{"id":"way/770009099","name":"Kaistraße"},"geometry":{"type":"LineString","coordinates":[[6.6895201,51.2081107],[6.689414,51.2078765],[6.6892277,51.2072787],[6.6891933,51.2069785],[6.6892121,51.206749],[6.6892685,51.2065391],[6.6894031,51.2063017],[6.689929,51.2055376]]}},
+{"type":"Feature","id":"way/771394060","properties":{"id":"way/771394060"},"geometry":{"type":"LineString","coordinates":[[6.7031436,51.1913873],[6.7032442,51.1914458],[6.7035534,51.1916191],[6.7035825,51.1916354],[6.7038028,51.1917589],[6.7038618,51.191792]]}},
+{"type":"Feature","id":"way/771394061","properties":{"id":"way/771394061"},"geometry":{"type":"LineString","coordinates":[[6.7031491,51.1921765],[6.7038028,51.1917589]]}},
+{"type":"Feature","id":"way/771394074","properties":{"id":"way/771394074"},"geometry":{"type":"LineString","coordinates":[[6.7028951,51.1923419],[6.7031491,51.1921765]]}},
+{"type":"Feature","id":"way/771394077","properties":{"id":"way/771394077"},"geometry":{"type":"LineString","coordinates":[[6.704211,51.1906809],[6.7043195,51.1907461],[6.7044763,51.1908402]]}}]}

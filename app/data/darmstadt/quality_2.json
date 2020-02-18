@@ -259,6 +259,7 @@
 ,"name":"Bahnhofstraße"
 },"geometry":{"type":"LineString","coordinates":[
 [8.647334,49.930020]
+,[8.647430,49.930692]
 ,[8.647491,49.931120]
 ]}}
 ,{"type":"Feature","id":"way/40871380"
