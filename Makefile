@@ -9,6 +9,7 @@ all: \
 	app/data/koeln \
 	app/data/karlsruhe \
 	app/data/darmstadt \
+	app/data/muenchen \
 	osm2json
 
 osm2json: osm2json.c
@@ -28,6 +29,7 @@ app/data/duesseldorf-small: app/data/duesseldorf-small/level_0.json app/data/due
 app/data/koeln: app/data/koeln/level_0.json app/data/koeln/quality_0.json
 app/data/karlsruhe: app/data/karlsruhe/level_0.json app/data/karlsruhe/quality_0.json
 app/data/darmstadt: app/data/darmstadt/level_0.json app/data/darmstadt/quality_0.json
+app/data/muenchen: app/data/muenchen/level_0.json app/data/muenchen/quality_0.json
 app/data/neuss: app/data/neuss/level_0.json app/data/neuss/quality_0.json
 app/data/neuss-small: app/data/neuss-small/level_0.json app/data/neuss-small/quality_0.json
 
@@ -67,6 +69,12 @@ app/data/darmstadt/quality_0.json: osmfiles/darmstadt.osm.json
 app/data/darmstadt/level_0.json: osmfiles/darmstadt.osm 
 	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
+app/data/muenchen/quality_0.json: osmfiles/muenchen.osm.json
+	./quality.py -i $< -o $(@D)
+
+app/data/muenchen/level_0.json: osmfiles/muenchen.osm 
+	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+
 app/data/neuss/quality_0.json: osmfiles/neuss.osm.json
 	./quality.py -i $< -o $(@D)
 
@@ -90,7 +98,8 @@ overpass: \
 	osmfiles/neuss.osm \
 	osmfiles/neuss-small.osm \
 	osmfiles/duesseldorf-small.osm \
-	osmfiles/darmstadt.osm
+	osmfiles/darmstadt.osm \
+	osmfiles/muenchen.osm
 
 osmfiles/neuss.osm:
 	curl -o $@ https://overpass-api.de/api/map?bbox=6.6086,51.1425,6.7844,51.2533
@@ -107,6 +116,9 @@ osmfiles/duesseldorf-small.osm:
 osmfiles/darmstadt.osm:
 	curl -o $@ https://overpass-api.de/api/map?bbox=8.5638,49.8219,8.7396,49.9359
 	
+osmfiles/muenchen.osm:
+	curl -o $@ https://overpass-api.de/api/map?bbox=11.3866,47.9729,11.9957,48.3065
+
 geofabrik: \
 	osmfiles/koeln-regbez-latest.osm.bz2 \
 	osmfiles/karlsruhe-regbez-latest.osm.bz2 \

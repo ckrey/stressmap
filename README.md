@@ -19,6 +19,7 @@ Current Examples:
 * Hamburg https://ckrey.github.io/stressmap/app/index.html?town=hamburg
 * Darmstadt https://ckrey.github.io/stressmap/app/index.html?town=darmstadt
 * Karlsruhe https://ckrey.github.io/stressmap/app/index.html?town=karlsruhe
+* München https://ckrey.github.io/stressmap/app/index.html?town=muenchen
 * _others? – create a Issue/PR_
 
 * add `&lts=yes` to see Levels of Traffic Stress (lts) layers too

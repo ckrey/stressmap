@@ -25,6 +25,8 @@ if (town == 'neuss') {
 	map = L.map('mapid').setView([53.5586, 10.0785], 10)
 } else if (town == 'rheinland-pfalz') {
 	map = L.map('mapid').setView([53.5586, 10.0785], 10)
+} else if (town == 'muenchen') {
+	map = L.map('mapid').setView([48.1542, 11.5813], 11)
 } else {
         town = 'berlin'
 	map = L.map('mapid').setView([52.5173, 13.3889], 10)
