@@ -6,9 +6,9 @@ var dus = urlParams.get('dus');
 var map;
 
 if (town == 'neuss') {
-	map = L.map('mapid').setView([51.1762, 6.7066], 12)
+	map = L.map('mapid').setView([51.2, 6.7066], 13)
 } else if (town == 'neuss-small') {
-	map = L.map('mapid').setView([51.2, 6.69], 13)
+	map = L.map('mapid').setView([51.2, 6.69], 14)
 } else if (town == 'darmstadt') {
 	map = L.map('mapid').setView([49.8730, 8.60], 11)
 } else if (town == 'duesseldorf') {
