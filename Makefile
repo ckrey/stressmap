@@ -38,67 +38,67 @@ app/data/neuss: app/data/neuss/level_0.json app/data/neuss/quality_0.json
 app/data/neuss-small: app/data/neuss-small/level_0.json app/data/neuss-small/quality_0.json
 
 app/data/leipzig/level_0.json: osmfiles/leipzig.osm 
-	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+	#node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
 app/data/leipzig/quality_0.json: osmfiles/leipzig.osm.json
 	./quality.py -i $< -o $(@D)
 
 app/data/halle/level_0.json: osmfiles/halle.osm 
-	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+	#node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
 app/data/halle/quality_0.json: osmfiles/halle.osm.json
 	./quality.py -i $< -o $(@D)
 
 app/data/duesseldorf/level_0.json: osmfiles/duesseldorf.osm 
-	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+	#node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
 app/data/duesseldorf/quality_0.json: osmfiles/duesseldorf.osm.json
 	./quality.py -i $< -o $(@D)
 
 app/data/koeln/level_0.json: osmfiles/koeln-regbez-latest.osm 
-	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+	#node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
 app/data/koeln/quality_0.json: osmfiles/koeln-regbez-latest.osm.json
 	./quality.py -i $< -o $(@D)
 
 app/data/karlsruhe/level_0.json: osmfiles/karlsruhe-regbez-latest.osm 
-	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+	#node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
 app/data/karlsruhe/quality_0.json: osmfiles/karlsruhe-regbez-latest.osm.json
 	./quality.py -i $< -o $(@D)
 
 app/data/berlin/level_0.json: osmfiles/berlin-latest.osm 
-	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+	#node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
 app/data/hamburg/quality_0.json: osmfiles/hamburg-latest.osm.json
 	./quality.py -i $< -o $(@D)
 
 app/data/hamburg/level_0.json: osmfiles/hamburg-latest.osm 
-	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+	#node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
 app/data/darmstadt/quality_0.json: osmfiles/darmstadt.osm.json
 	./quality.py -i $< -o $(@D)
 
 app/data/darmstadt/level_0.json: osmfiles/darmstadt.osm 
-	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+	#node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
 app/data/muenchen/quality_0.json: osmfiles/muenchen.osm.json
 	./quality.py -i $< -o $(@D)
 
 app/data/muenchen/level_0.json: osmfiles/muenchen.osm 
-	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+	#node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
 app/data/neuss/quality_0.json: osmfiles/neuss.osm.json
 	./quality.py -i $< -o $(@D)
 
 app/data/neuss/level_0.json: osmfiles/neuss.osm 
-	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+	#node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
 app/data/neuss-small/level_0.json: osmfiles/neuss-small.osm 
-	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+	#node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
 app/data/duesseldorf-small/level_0.json: osmfiles/duesseldorf-small.osm 
-	node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
+	#node ../stressmodel/main.js -d $(@D) -f $< -i -n -v -z
 
 app/data/neuss-small/quality_0.json: osmfiles/neuss-small.osm.json
 	./quality.py -i $< -o $(@D)
@@ -150,13 +150,13 @@ geofabrik: \
 	gunzip -f -k $<
 
 osmfiles/berlin-latest.osm.bz2:
-	curl -z $@ -o $@ https://download.geofabrik.de/europe/germany/berlin-latest.osm.bz2
+	curl -z ./$@ -o $@ https://download.geofabrik.de/europe/germany/berlin-latest.osm.bz2
 
 osmfiles/hamburg-latest.osm.bz2:
-	curl -z $@ -o $@ https://download.geofabrik.de/europe/germany/hamburg-latest.osm.bz2
+	curl -z ./$@ -o $@ https://download.geofabrik.de/europe/germany/hamburg-latest.osm.bz2
 
 osmfiles/koeln-regbez-latest.osm.bz2:
-	curl -z $@ -o $@ https://download.geofabrik.de/europe/germany/nordrhein-westfalen/koeln-regbez-latest.osm.bz2
+	curl -z ./$@ -o $@ https://download.geofabrik.de/europe/germany/nordrhein-westfalen/koeln-regbez-latest.osm.bz2
 
 osmfiles/karlsruhe-regbez-latest.osm.bz2:
-	curl -z $@ -o $@ https://download.geofabrik.de/europe/germany/baden-wuerttemberg/karlsruhe-regbez-latest.osm.bz2
+	curl -z ./$@ -o $@ https://download.geofabrik.de/europe/germany/baden-wuerttemberg/karlsruhe-regbez-latest.osm.bz2
