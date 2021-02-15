@@ -170,6 +170,7 @@ def compute_level(tags):
     """ compute the quality level of a highway by its tags
     """
     _level = biking_permitted(tags)
+    #print('level', _level, 'tags', tags)
     if _level >= 100:
         _level = cycleway(_level, tags)
         _level = cyclestreet(_level, tags)
