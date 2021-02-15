@@ -197,13 +197,14 @@ function addIconLayers(){
 
   const providers = [];
   providers.push({
-      title: 'osm bw',
-      icon: 'img/icons-osm-bw.png',
-      layer: L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+      title: 'OpenCycleMap',
+      icon: 'img/icons-ocm.png',
+      layer: L.tileLayer('https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=60d5d84b7a3245618dd4eeef25759141', {
           maxZoom: 22,
-          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          attribution: 'Maps &copy; <a href="www.thunderforest.com">Thunderforest</a> , Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
       })
   });
+
   providers.push({
       title: 'mapnik',
       icon: 'img/icons-mapnik.png',
@@ -213,9 +214,16 @@ function addIconLayers(){
       })
   });
 
+  providers.push({
+      title: 'osm bw',
+      icon: 'img/icons-osm-bw.png',
+      layer: L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+          maxZoom: 22,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      })
+  });
 
   L.control.iconLayers(providers).addTo(map);
-
 }
 
 
