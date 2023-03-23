@@ -27,6 +27,9 @@ def effective_highway(tags, value):
     return False
 
 def cycleway(old_level, tags):
+    if old_level > 799:
+        return old_level
+
     if effective_highway(tags, 'cycleway'):
         # 700 This way is a cycleway because highway='cycleway'.
         return 700
@@ -34,6 +37,9 @@ def cycleway(old_level, tags):
     return old_level # no cycleway
 
 def cyclestreet(old_level, tags):
+    if old_level > 499:
+        return old_level
+
     if 'cyclestreet' in tags and tags['cyclestreet'] == 'yes':
         # 401 This way is a cyclestreet because cyclestreet='yes'.
         return 401
@@ -67,6 +73,9 @@ def bicycle_positive(tags):
         return False
 
 def separated_path(old_level, tags):
+    if old_level > 599:
+        return old_level
+
     if effective_highway(tags, 'path'):
         # 501 This way is a separated path because highway='path'.
         return 501
@@ -81,6 +90,9 @@ def separated_path(old_level, tags):
     return old_level # not separated
 
 def track(old_level, tags):
+    if old_level > 399:
+        return old_level
+
     if tag_starts_with_value(tags, 'cycleway', 'track'):
         # 301 This way is a separated path because cycleway* is defined as 'track'.
         return 301
@@ -92,6 +104,9 @@ def track(old_level, tags):
     return old_level # not separated
 
 def lane(old_level, tags):
+    if old_level > 299:
+        return old_level
+
     if tag_starts_with_value(tags, 'cycleway', 'lane'):
         # 201 This way has a lane because cycleway* is defined as 'lane'.
         return 201
