@@ -214,6 +214,15 @@ title: 'mapnik',
       })
   });
 
+  providers.push({
+title: 'cyclosm',
+      icon: 'img/icons-cyclosm.png',
+      layer: L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
+          maxZoom: 22,
+          attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases">CyclOSM</a> &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      })
+  });
+
   L.control.iconLayers(providers).addTo(map);
 }
 
