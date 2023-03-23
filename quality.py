@@ -1,4 +1,4 @@
-#!/usr/bin/env python -B
+#!/usr/bin/env python3 -B
 """ quality.py parses an .osm.json file and creates quality rated geojson files as overlays
 """
 
